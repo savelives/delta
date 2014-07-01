@@ -16,7 +16,8 @@
 
 module.exports = function (grunt) {
 
-
+  // Load other tasks
+  require('load-grunt-tasks')(grunt);
 
   /**
    * CSS files to inject in order
