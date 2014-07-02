@@ -182,11 +182,19 @@ module.exports = function (grunt) {
       }
     },
 
-    compass: {
-      dist: {
-        options: {
-          require: 'susy',
-          config: 'config.rb'
+    // compass: {
+    //   dist: {
+    //     options: {
+    //       require: 'susy',
+    //       config: 'config.rb'
+    //     }
+    //   }
+    // },
+
+    sass: {
+      dev: {
+        files: {
+          'assets/styles/main.css': 'assets/_sass/main.scss'
         }
       }
     },
@@ -414,7 +422,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('compileAssets', [
     'clean:dev',
-    'compass:dist',
+    'sass:dev',
     'copy:dev'
   ]);
 
