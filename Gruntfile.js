@@ -197,7 +197,7 @@ module.exports = function (grunt) {
     browserify: {
       dev: {
         files: {
-          'assets/js/build/bundle.js': ['assets/js/app.js']
+          'assets/js/build/bundle.js': ['assets/js/alpha/app.js']
         }
       }
     },
