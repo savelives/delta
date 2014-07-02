@@ -238,8 +238,8 @@ module.exports = function (grunt) {
 
     uglify: {
       dist: {
-        src: ['.tmp/public/concat/production.js'],
-        dest: '.tmp/public/min/production.js'
+        src: ['assets/js/build/bundle.js'],
+        dest: 'assets/js/app.min.js'
       }
     },
 
@@ -416,12 +416,16 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'compileAssets',
     'linkAssets',
+    'browserify',
+    'uglify',
     'watch'
   ]);
 
   grunt.registerTask('compileAssets', [
     'clean:dev',
     'sass:dev',
+    'browserify',
+    'uglify',
     'copy:dev'
   ]);
 
@@ -442,6 +446,8 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'compileAssets',
     'linkAssets',
+    'browserify',
+    'uglify',
     'clean:build',
     'copy:build'
   ]);
@@ -454,6 +460,7 @@ module.exports = function (grunt) {
     'copy:dev',
     'coffee:dev',
     'concat',
+    'browserify',
     'uglify',
     'cssmin',
     'sails-linker:prodJs',
