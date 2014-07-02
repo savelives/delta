@@ -13,6 +13,10 @@
     "sails": "0.9.16",
     "sails-disk": "~0.9.0"
   },
+  "devDependencies": {
+    "grunt-browserify": "^2.1.2",
+    "grunt-contrib-sass": "^0.7.3"
+  },
   "scripts": {
     "start": "node app.js",
     "debug": "node debug app.js"
@@ -20,9 +24,5 @@
   "main": "app.js",
   "repository": "",
   "author": "",
-  "license": "",
-  "devDependencies": {
-    "grunt-browserify": "^2.1.2",
-    "grunt-contrib-sass": "^0.7.3"
-  }
+  "license": ""
 }
