@@ -1,6 +1,6 @@
 preferred_syntax = :scss
 
-http_path = ''
+http_path = '/'
 
 css_dir = 'assets/styles'
 sass_dir = 'assets/_sass'
