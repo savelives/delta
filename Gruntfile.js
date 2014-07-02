@@ -195,7 +195,11 @@ module.exports = function (grunt) {
     },
 
     browserify: {
-      // TODO
+      dev: {
+        files: {
+          'assets/js/build/bundle.js': ['assets/js/app.js']
+        }
+      }
     },
 
     coffee: {
