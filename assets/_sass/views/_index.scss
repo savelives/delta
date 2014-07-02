@@ -1,0 +1,468 @@
+/*------------------------------------*\
+  Miscellaneous
+\*------------------------------------*/
+.home-part,
+.get-in-touch {
+  background: $ablue;
+}
+
+.name-field,
+.email-field {
+  width: 368px;
+  height: 50px;
+}
+
+.contact-name-field,
+.contact-email-field {
+  width: 470px;
+  height: 50px;
+}
+
+.name-field,
+.contact-name-field {
+  margin-right: 20px;
+}
+
+.big-title {
+  display: block;
+  @include font-size(4.0);
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.arrow-down {
+  position: relative;
+  margin: 20px auto 0 auto;
+  @include font-size(1.8);
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+  background: url('../../img/img-sprites.png') no-repeat;
+  content: "";
+}
+
+.arrow-down-w {
+  background-position: -165px -7px;
+  width: 25px;
+  height: 15px;
+}
+
+.arrow-down-g {
+  background-position: -198px -6px;
+  width: 25px;
+  height: 15px;
+}
+
+.arrow-previous-section {
+  border-bottom: 1px solid $awhite;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  &:before {
+    border-color: rgba(234,234,234,0);
+    border-top-color: #eaeaea;
+    border-width: 25px;
+    left: 50%;
+    margin-left: -25px;
+  }
+  &.arrow-previous-section-w {
+    background: $awhite;
+    &:after,
+    &:before {
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 100%;
+      width: 0;
+    }
+    &:after {
+      border-color: rgba(40,84,161,0);
+      border-top-color: $awhite;
+      border-width: 24px;
+      left: 50%;
+      margin-left: -24px;
+    }
+  }
+  &.arrow-previous-section-b {
+    background: $ablue;
+    &:after,
+    &:before {
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 100%;
+      width: 0;
+    }
+    &:after {
+      border-color: rgba(40,84,161,0);
+      border-top-color: $ablue;
+      border-width: 24px;
+      left: 50%;
+      margin-left: -24px;
+    }
+  }
+  &.arrow-previous-section-g {
+    background: $aagreen;
+    &:after,
+    &:before {
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 100%;
+      width: 0;
+    }
+    &:after {
+      border-color: rgba(40,84,161,0);
+      border-top-color: $aagreen;
+      border-width: 24px;
+      left: 50%;
+      margin-left: -24px;
+    }
+  }
+}
+
+/*------------------------------------*\
+  Home part
+\*------------------------------------*/
+.home-part {
+  margin-top: 60px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  p {
+    @include font-size(2.4);
+    line-height: 30px;
+    font-weight: 300;
+    color: $awhite;
+    text-align: center;
+  }
+  .arrow-down {
+    top: 20px;
+  }
+}
+
+.initiative-title {
+  color: $agreen;
+  margin-bottom: 60px;
+}
+
+.register-now {
+  margin-top: 40px;
+}
+
+.btn-register-now {
+  float: right;
+  margin: 0;
+}
+
+.disclaimer-info {
+  margin-top: 80px;
+  display: block;
+  color: $awhite;
+  @include font-size(1.4);
+  font-weight: 300;
+  text-align: center;
+}
+
+/*------------------------------------*\
+  Who can
+\*------------------------------------*/
+.who-can {
+  position: relative;
+  background: $awhite;
+  padding: 70px 0;
+  .arrow-down {
+    top: 60px;
+  }
+}
+
+.tabs {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.can-cant {
+  text-align: center;
+  a {
+    color: $agrey;
+    display: block;
+    @include font-size(2.2);
+    padding: 0.25em 1.25em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    &:hover {
+      color: $aagreen;
+      -webkit-transition: all .3ms ease-in-out;
+      -moz-transition: all .3ms ease-in-out;
+      -ms-transition: all .3ms ease-in-out;
+      -o-transition: all .3ms ease-in-out;
+      transition: all .3ms ease-in-out;
+    }
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      margin: -0.25em 0.4em 0 0;
+    }
+  }
+  ul {
+    display: inline-block;
+    margin-left: 55px;
+  }
+  li {
+    position: relative;
+    float: left;
+    display: block;
+    margin: 0 0.25em;
+    border: 1px solid $agrey;
+    border-bottom: none;
+    &.tab-current {
+      border: 1px solid $aagreen;
+      box-shadow: inset 0 2px $aagreen;
+      border-bottom: none;
+      z-index: 100;
+      a {
+        color: $aagreen;
+      }
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        right: 100%;
+        bottom: 0;
+        width: 1000px;
+        background: $aagreen;
+      }
+      &:after {
+        right: auto;
+        left: 100%;
+        width: 4000px;
+      }
+    }
+  }
+}
+
+.tabs-content {
+  padding-top: 80px;
+  section {
+    @extend .is-hidden;
+  }
+}
+
+.tab-content-current {
+  @extend .is-visible-block;
+}
+
+.nal {
+  text-align: center;
+  @extend .cf;
+  li {
+    cursor: pointer;
+    width: 170px;
+    height: auto;
+    min-height: 180px;
+    float: left;
+    margin: 30px 11px 10px 11px;
+    @extend .cf;
+  }
+}
+
+.nal-title {
+  @include font-size(1.6);
+  color: $text-gb;
+  text-transform: uppercase;
+}
+
+.symbol-check {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  background: url('../../img/img-sprites.png') no-repeat;
+}
+
+.symbol-check-positive {
+  background-position: -2px -44px;
+  width: 45px;
+  height: 45px;
+}
+
+.symbol-check-negative {
+  background-position: -182px -44px;
+  width: 45px;
+  height: 45px;
+}
+
+.wc-info {
+  @include font-size(1.6);
+  font-weight: 300;
+  line-height: 20px;
+  color: $text-gb;
+  @extend .is-hidden;
+  width: 140px;
+  margin: 5px auto;
+}
+
+.info-women-men {
+  position: relative;
+  margin-top: 80px;
+  padding: 40px 0;
+  text-align: center;
+  h4 {
+    @include font-size(1.8);
+    text-transform: uppercase;
+    color: $aagreen;
+    margin-bottom: 10px;
+  }
+  small {
+    color: $text-gb;
+    @include font-size(1.6);
+    font-weight: 300;
+    &:before {
+      background: url('../../img/img-sprites.png') no-repeat;
+      content: "";
+      display: inline-block;
+      margin: -7px 10px 0 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+.info-women {
+  small {
+    &:before {
+      background-position: -73px -4px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.info-men {
+  display: none;
+  small {
+    &:before {
+      background-position: -133px -2px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.np-arrows {
+  @extend .cf;
+}
+
+.np-arrow {
+  position: absolute;
+  top: 80px;
+  background: url('../../img/img-sprites.png') no-repeat;
+  width: 9px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.np-arrow-prev {
+  background-position: -10px -5px;
+  left: 40px;
+}
+
+.np-arrow-next {
+  background-position: -27px -5px;
+  right: 40px;
+}
+
+/*------------------------------------*\
+  Responsibility
+\*------------------------------------*/
+.responsibility {
+  position: relative;
+  background: $aagreen;
+  padding: 50px 0;
+  p {
+    color: $awhite;
+    @include font-size(2.4);
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .arrow-down {
+    top: 40px;
+  }
+}
+
+.responsibility-title {
+  color: $text-blue;
+  margin-bottom: 40px;
+}
+
+.hosnety {
+  font-weight: 400 !important;
+  text-align: center;
+}
+
+/*------------------------------------*\
+  The Project
+\*------------------------------------*/
+.the-project {
+  position: relative;
+  padding: 40px 0;
+  p {
+    color: $text-gb;
+    @include font-size(2.4);
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .arrow-down {
+    top: 30px;
+  }
+}
+
+.the-project-title {
+  color: $aablue;
+  margin-bottom: 30px;
+}
+
+.btn-project {
+  display: block;
+  margin: 30px auto;
+}
+/*------------------------------------*\
+  Get in Touch
+\*------------------------------------*/
+.get-in-touch {
+  position: relative;
+  padding: 40px 0;
+  p {
+    @include font-size(2.4);
+    font-weight: 300;
+    color: $awhite;
+    text-align: center;
+  }
+  .arrow-down {
+    top: 80px;
+  }
+}
+
+.contact-title {
+  color: $agreen;
+  margin-bottom: 30px;
+}
+
+.message-field {
+  display: block;
+  width: 100%;
+  height: 250px;
+  margin: 20px 0 0 0;
+}
+
+.btn-send-message {
+  float: right;
+}

@@ -1,0 +1,161 @@
+/*------------------------------------*\
+  Susy configuration
+\*------------------------------------*/
+$total-columns: 12;
+$column-width: 4em;
+$gutter-width: 1em;
+$container-width: 60em;
+
+$susy: (
+  columns: $total-columns,
+  gutters: $gutter-width / $column-width,
+  column-width: $column-width,
+
+  container: $container-width,
+);
+
+/*------------------------------------*\
+  Base configuration
+\*------------------------------------*/
+* {
+  @include box-sizing(border-box);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  background: $awhite;
+}
+
+.wrap {
+  @include container;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  border: 0;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-size: 24px;
+}
+
+/*------------------------------------*\
+  Main Header
+\*------------------------------------*/
+.main-header {
+  position: fixed;
+  background: $ablue;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 65px;
+  border-bottom: 1px solid $awhite;
+  z-index: 99999;
+  a {
+    color: $awhite;
+  }
+}
+
+.logo {
+  margin: 10px 0 0 0;
+}
+
+.logo-link {
+  @include font-size(3.6);
+  float: left;
+}
+
+.main-menu {
+  position: relative;
+  float: right;
+  li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 20px;
+    @include font-size(1.6);
+    text-transform: uppercase;
+    a {
+      font-weight: 300;
+    }
+  }
+}
+
+/*------------------------------------*\
+  Main Footer
+\*------------------------------------*/
+.main-footer {
+  position: relative;
+  background: $awhite;
+  padding: 40px 0;
+}
+
+.supporting {
+  margin-bottom: 120px;
+}
+
+.supporting-title {
+  color: $ablue;
+}
+
+.supporting-list {
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 50px;
+  }
+}
+
+.logo-awlka {
+  width: 150px;
+}
+
+.logo-digitalocean {
+  width: 136px;
+}
+
+.logo-awlka,
+.logo-digitalocean {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.other-infos {
+  float: right;
+}
+
+.other-infos-list {
+  li {
+    display: inline-block;
+    @include font-size(1.2);
+    font-weight: 300;
+    a {
+      color: $text-gb;
+      margin-left: 10px;
+      text-decoration: underline;
+    }
+  }
+}

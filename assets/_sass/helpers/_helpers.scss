@@ -1,0 +1,75 @@
+/*------------------------------------*\
+  Helpers
+\*------------------------------------*/
+.cf {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*------------------------------------*\
+  Mixins
+\*------------------------------------*/
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+/*------------------------------------*\
+  BTNs
+\*------------------------------------*/
+.btn {
+  background: $aagreen;
+  color: $awhite;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+/*------------------------------------*\
+  Other helpers to help :p
+\*------------------------------------*/
+
+.is-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.is-visible-block {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.is-visible-inline {
+  display: inline;
+  visibility: visible;
+}
+
+.is-visible-inline-block {
+  display: inline-block;
+  visibility: visible;
+}
+
+.is-center-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: table;
+}
+
+.is-center-content {
+  display: table-cell;
+  vertical-align: middle;
+}
