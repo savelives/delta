@@ -6,6 +6,7 @@
   "dependencies": {
     "ejs": "0.8.4",
     "grunt": "0.4.1",
+    "grunt-cli": "^0.1.13",
     "jquery": "^2.1.1",
     "load-grunt-tasks": "^0.6.0",
     "lodash": "^2.4.1",
