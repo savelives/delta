@@ -20,7 +20,7 @@
 
 .name-field,
 .contact-name-field {
-  margin-right: 20px;
+  margin-right: 17px;
 }
 
 .big-title {
@@ -432,7 +432,12 @@
 
 .btn-project {
   display: block;
+  width: 160px;
   margin: 30px auto;
+  padding: 10px;
+  @include font-size(2.4);
+  text-align: center;
+  border-radius: 3px;
 }
 /*------------------------------------*\
   Get in Touch
