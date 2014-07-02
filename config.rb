@@ -2,7 +2,7 @@ preferred_syntax = :scss
 
 http_path = ''
 
-css_dir = 'assets/styles/'
+css_dir = 'assets/styles'
 sass_dir = 'assets/_sass'
 images_dir = 'assets/images'
 javascripts_dir = 'assets/js'
