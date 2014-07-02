@@ -47,3 +47,4 @@ config/local.js
 ####
 
 www/
+assets/styles/main.css
