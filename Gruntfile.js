@@ -446,7 +446,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'compileAssets',
     'linkAssets',
-    'browserify',
+    'browserify:dev',
     'uglify',
     'clean:build',
     'copy:build'
@@ -460,7 +460,7 @@ module.exports = function (grunt) {
     'copy:dev',
     'coffee:dev',
     'concat',
-    'browserify',
+    'browserify:dev',
     'uglify',
     'cssmin',
     'sails-linker:prodJs',
