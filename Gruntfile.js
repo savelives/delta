@@ -185,7 +185,7 @@ module.exports = function (grunt) {
     sass: {
       dev: {
         options: {
-          style: 'compressed'
+          outputStyle: 'compressed'
         },
         files: {
           'assets/styles/main.css': 'assets/_sass/main.scss'
