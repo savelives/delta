@@ -1,20 +1,4 @@
 /*------------------------------------*\
-  Susy configuration
-\*------------------------------------*/
-$total-columns: 12;
-$column-width: 4em;
-$gutter-width: 1em;
-$container-width: 60em;
-
-$susy: (
-  columns: $total-columns,
-  gutters: $gutter-width / $column-width,
-  column-width: $column-width,
-
-  container: $container-width,
-);
-
-/*------------------------------------*\
   Base configuration
 \*------------------------------------*/
 * {
@@ -39,7 +23,10 @@ body {
 }
 
 .wrap {
-  @include container;
+  width: 60em;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
