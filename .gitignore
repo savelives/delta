@@ -53,3 +53,4 @@ assets/js/app.min.js
 
 ## Nodemailer
 config/mailgun.js
+config/outlook.js
