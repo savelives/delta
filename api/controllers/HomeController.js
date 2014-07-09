@@ -15,16 +15,47 @@
  * @docs        :: http://sailsjs.org/#!documentation/controllers
  */
 
-module.exports = {
-    
-  
+var nodemailer = require('nodemailer');
 
+module.exports = {
 
   /**
    * Overrides for the settings in `config/controllers.js`
    * (specific to HomeController)
    */
-  _config: {}
+  _config: {},
 
-  
+  contact: function (req, res) {
+    var params = req.params.all();
+    // console.log(params);
+    // res.redirect('/');
+
+    smtpTrans = nodemailer.createTransport('SMTP', {
+      service: "Gmail",
+      auth: {
+          user: "gmail.user@gmail.com",
+          pass: "userpass"
+      }
+    });
+
+    mailOpts = {
+      from: params.name + '&lt;' + params.email + '&gt;',
+      to: 'contato@saveliv.es',
+      subject: 'Contato no site SaveLives',
+      text: params.message
+    };
+
+    smtpTrans.sendMail(mailOpts, function (error, response) {
+
+      if (error) {
+        console.log(':(' + error);
+      } else {
+        res.redirect('/');
+      }
+
+    });
+
+  }
+
+
 };
