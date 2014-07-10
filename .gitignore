@@ -50,6 +50,7 @@ www/
 assets/styles/main.css
 assets/js/build/
 assets/js/app.min.js
+assets/bower
 
 ## Nodemailer
 config/mailgun.js
