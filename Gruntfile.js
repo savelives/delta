@@ -193,13 +193,13 @@ module.exports = function (grunt) {
       }
     },
 
-    browserify: {
-      dev: {
-        files: {
-          'assets/js/build/bundle.js': ['assets/js/alpha/app.js']
-        }
-      }
-    },
+    // browserify: {
+    //   dev: {
+    //     files: {
+    //       'assets/js/build/bundle.js': ['assets/js/alpha/app.js']
+    //     }
+    //   }
+    // },
 
     coffee: {
       dev: {
@@ -237,8 +237,12 @@ module.exports = function (grunt) {
 
     uglify: {
       dist: {
-        src: ['assets/js/build/bundle.js'],
-        dest: 'assets/js/app.min.js'
+        files: {
+          'assets/js/app.min.js': [
+            'assets/bower/jquery/dist/jquery.js',
+            'assets/js/alpha/**/*.js'
+            ]
+        }
       }
     },
 
@@ -415,7 +419,6 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'compileAssets',
     'linkAssets',
-    'browserify',
     'uglify',
     'watch'
   ]);
@@ -423,7 +426,6 @@ module.exports = function (grunt) {
   grunt.registerTask('compileAssets', [
     'clean:dev',
     'sass:dev',
-    'browserify:dev',
     'uglify',
     'copy:dev'
   ]);
@@ -445,7 +447,6 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'compileAssets',
     'linkAssets',
-    'browserify:dev',
     'uglify',
     'clean:build',
     'copy:build'
@@ -459,7 +460,6 @@ module.exports = function (grunt) {
     'copy:dev',
     'coffee:dev',
     'concat',
-    'browserify:dev',
     'uglify',
     'cssmin',
     'sails-linker:prodJs',
