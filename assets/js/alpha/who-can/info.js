@@ -2,7 +2,6 @@
  * Who can and who can't donate info
  * @author Lucas <lucas@lucas.ninja>
  */
-var $ = require('jquery');
 
 var info = (function (window, document, undefined) {
   'use strict';
@@ -31,5 +30,3 @@ var info = (function (window, document, undefined) {
   return info.init();
 
 })(window, document);
-
-module.exports = info;

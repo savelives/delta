@@ -2,7 +2,6 @@
  * Contact form
  * @author Lucas <lucas@lucas.ninja>
  */
-var $ = require('jquery');
 
 var contactForm = (function (window, document, undefined) {
   'use strict';
@@ -51,5 +50,3 @@ var contactForm = (function (window, document, undefined) {
   return contactForm.init();
 
 })(window, document);
-
-module.exports = contactForm;

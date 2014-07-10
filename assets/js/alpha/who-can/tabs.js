@@ -2,7 +2,6 @@
  * Tabs system
  * @author Lucas <lucas@lucas.ninja>
  */
-var $ = require('jquery');
 
 var tabs = (function (window, document, undefined) {
   'use strict';
@@ -27,5 +26,3 @@ var tabs = (function (window, document, undefined) {
   return tabs.init();
 
 })(window, document);
-
-module.exports = tabs;
