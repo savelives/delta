@@ -31,7 +31,7 @@ module.exports = {
       email = req.body.email,
       message = req.body.message;
 
-    smtpTrans = nodemailer.createTransport('SMTP', {
+    var smtpTrans = nodemailer.createTransport('SMTP', {
       service: sails.config.gmail.service,
       auth: {
         user: sails.config.gmail.auth.user,
@@ -39,19 +39,19 @@ module.exports = {
       }
     });
 
-    mailOpts = {
-      from: name + '&lt;' + email + '&gt;',
-      to: 'contato@saveliv.es',
+    // TODO: Figure out why the heck I can't pass the sender information to email receiver
+    var mailOptions = {
+      from: email,
+      to: sails.config.gmail.ukey,
       subject: 'Contato no site SaveLives',
-      text: message
+      html: name + '<br>' + email + '<br>' + message
     };
 
-    smtpTrans.sendMail(mailOpts, function (error, response) {
+    smtpTrans.sendMail(mailOptions, function (error, response) {
 
       if (error) {
         console.log(':(' + error);
       } else {
-        // console.log(params);
         res.redirect('/');
       }
 
