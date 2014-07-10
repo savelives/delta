@@ -1,0 +1,23 @@
+{
+  "name": "pre-delta",
+  "version": "0.0.0",
+  "homepage": "https://github.com/savelives/delta",
+  "authors": [
+    "Lucas Churchill <lucas@agtlucas.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower",
+    "test",
+    "tests"
+  ]
+}
