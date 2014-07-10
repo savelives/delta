@@ -17,18 +17,28 @@ var contactForm = (function (window, document, undefined) {
 
     var name = $('.contact-name-field').val(),
       email = $('.contact-email-field').val(),
-      message = $('.message-field').val(),
-      info = {'name': name, 'email': email, 'message': message};
+      message = $('.message-field').val();
 
-    $('.btn-send-message').on('click', function () {
+    var info = {"name": name, "email": email, "message": message};
+
+    var form = $('.contact-form');
+    var formData = $(form).serialize();
+
+    $(form).submit(function (event) {
+      console.log(info);
+      event.preventDefault();
       $.ajax({
         type: 'POST',
         url: 'home/contact',
         data: JSON.stringify(info),
         contentType:"application/json; charset=utf-8",
         dataType: 'json'
-      }).done(function () {
-        alert('Cool!');
+      }).done(function (response) {
+        console.log('Yeah!' + response);
+        console.log(info);
+      }).fail(function (data) {
+        console.log(':(' + data);
+        console.log(info);
       });
     });
 

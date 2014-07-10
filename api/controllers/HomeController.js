@@ -41,7 +41,7 @@ module.exports = {
 
     // TODO: Figure out why the heck I can't pass the sender information to email receiver
     var mailOptions = {
-      from: email,
+      from: name + '<' + email + '>',
       to: sails.config.gmail.ukey,
       subject: 'Contato no site SaveLives',
       html: name + '<br>' + email + '<br>' + message
