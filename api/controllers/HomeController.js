@@ -26,23 +26,24 @@ module.exports = {
   _config: {},
 
   contact: function (req, res) {
-    var params = req.params.all();
-    // console.log(params);
-    // res.redirect('/');
+
+    var name = req.body.name,
+      email = req.body.email,
+      message = req.body.message;
 
     smtpTrans = nodemailer.createTransport('SMTP', {
-      service: "Gmail",
+      service: sails.config.gmail.service,
       auth: {
-          user: "gmail.user@gmail.com",
-          pass: "userpass"
+        user: sails.config.gmail.auth.user,
+        pass: sails.config.gmail.auth.pass
       }
     });
 
     mailOpts = {
-      from: params.name + '&lt;' + params.email + '&gt;',
+      from: name + '&lt;' + email + '&gt;',
       to: 'contato@saveliv.es',
       subject: 'Contato no site SaveLives',
-      text: params.message
+      text: message
     };
 
     smtpTrans.sendMail(mailOpts, function (error, response) {
@@ -50,6 +51,7 @@ module.exports = {
       if (error) {
         console.log(':(' + error);
       } else {
+        // console.log(params);
         res.redirect('/');
       }
 
