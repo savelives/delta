@@ -5,12 +5,13 @@
 var $ = require('jquery');
 
 var contactForm = (function (window, document, undefined) {
+  'use strict';
 
-  var contactForm = {},
+  var contactForm = {};
 
   contactForm.init = function () {
     this.sendEmail();
-  },
+  };
 
   contactForm.sendEmail = function () {
 
