@@ -51,3 +51,5 @@ var contactForm = (function (window, document, undefined) {
   return contactForm.init();
 
 })(window, document);
+
+module.exports = contactForm;
