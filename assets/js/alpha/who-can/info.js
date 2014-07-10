@@ -31,3 +31,5 @@ var info = (function (window, document, undefined) {
   return info.init();
 
 })(window, document);
+
+module.exports = info;
