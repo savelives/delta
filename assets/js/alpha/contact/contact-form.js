@@ -9,7 +9,7 @@ var contactForm = (function (window, document, undefined) {
   var contactForm = {},
 
   contactForm.init = function () {
-
+    this.sendEmail();
   },
 
   contactForm.sendEmail = function () {
@@ -31,6 +31,8 @@ var contactForm = (function (window, document, undefined) {
       });
     });
 
-  }
+  };
+
+  return contactForm.init();
 
 })(window, document);
