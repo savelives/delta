@@ -19,9 +19,9 @@ var contactForm = (function (window, document, undefined) {
       message = $('.message-field').val();
 
     var info = {
-      "name": $('.contact-name-field').val(),
-      "email": $('.contact-email-field').val(),
-      "message": $('.message-field').val()
+      "name": name,
+      "email": email,
+      "message": message
     };
 
     var form = $('.contact-form');
@@ -33,15 +33,15 @@ var contactForm = (function (window, document, undefined) {
       $.ajax({
         type: 'POST',
         url: 'home/contact',
-        data: formData,
+        data: JSON.stringify(info),
         contentType:"application/json; charset=utf-8",
         dataType: 'json'
       }).done(function (response) {
         console.log('Yeah!' + response);
-        console.log(info);
+        console.log(JSON.stringify(info));
       }).fail(function (data) {
         console.log(':(' + data);
-        console.log(info);
+        console.log(JSON.stringify(info));
       });
     });
 
