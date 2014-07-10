@@ -19,18 +19,22 @@ var contactForm = (function (window, document, undefined) {
       email = $('.contact-email-field').val(),
       message = $('.message-field').val();
 
-    var info = {"name": name, "email": email, "message": message};
+    var info = {
+      "name": $('.contact-name-field').val(),
+      "email": $('.contact-email-field').val(),
+      "message": $('.message-field').val()
+    };
 
     var form = $('.contact-form');
     var formData = $(form).serialize();
 
     $(form).submit(function (event) {
-      console.log(info);
+      console.log(formData + ' XD');
       event.preventDefault();
       $.ajax({
         type: 'POST',
         url: 'home/contact',
-        data: JSON.stringify(info),
+        data: formData,
         contentType:"application/json; charset=utf-8",
         dataType: 'json'
       }).done(function (response) {
