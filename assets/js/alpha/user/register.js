@@ -16,28 +16,33 @@ var userForm = (function (window, document, undefined) {
 
     var form = $('.register-user-form');
 
-    var info = {
-      name: $('.name-field');
-      email: $('.email.field');
-    };
+    // var name = $('.name-field').val(),
+    //   email = $('.email-field').val()
 
-    $(form).submit(function (event) {
+    // var info = {
+    //   "name": name,
+    //   "email": email
+    // };
 
-      $.ajax({
-        type: 'POST',
-        url: 'user/create',
-        data: JSON.stringify(info),
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json'
-      }).done(function (response) {
-        console.log('Cool!! ' + response);
-      }).fails(function (data) {
-        console.log('Nooo :( ' + data);
-      });
+    // $(form).submit(function (event) {
+    //   event.preventDefault();
+    //   $.ajax({
+    //     async: false,
+    //     type: 'POST',
+    //     url: 'user/create',
+    //     data: JSON.stringify(info),
+    //     contentType: 'application/json; charset=utf-8',
+    //     dataType: 'json'
+    //   }).done(function (response) {
+    //     console.log('Cool!! ' + response);
+    //   }).fails(function (data) {
+    //     console.log('Nooo :( ' + data);
+    //   });
 
-    });
+    // });
 
   };
 
+  return userForm.init();
 
 })(window, document);
