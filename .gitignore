@@ -53,6 +53,7 @@ assets/js/app.min.js
 assets/bower
 
 config/production.js
+config/mongo.js
 
 ## Nodemailer
 config/mailgun.js
