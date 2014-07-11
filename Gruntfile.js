@@ -240,6 +240,7 @@ module.exports = function (grunt) {
         files: {
           'assets/js/app.min.js': [
             'assets/bower/jquery/dist/jquery.js',
+            'assets/bower/validator-js/validator.js',
             'assets/js/alpha/**/*.js'
             ]
         }
