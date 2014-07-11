@@ -8,12 +8,22 @@
 
 module.exports = {
 
+  schema: true,
+
   attributes: {
-  	
-  	/* e.g.
-  	nickname: 'string'
-  	*/
-    
+
+    name: {
+      type: 'string',
+      required: true
+    },
+
+    email: {
+      type: 'string',
+      email: true,
+      required: true,
+      unique: true
+    }
+
   }
 
 };
