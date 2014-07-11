@@ -52,6 +52,8 @@ assets/js/build/
 assets/js/app.min.js
 assets/bower
 
+config/production.js
+
 ## Nodemailer
 config/mailgun.js
 config/outlook.js
