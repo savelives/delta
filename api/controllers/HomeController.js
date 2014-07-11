@@ -51,8 +51,9 @@ module.exports = {
 
       if (error) {
         console.log(':(' + error);
+        console.log(mailOptions);
       } else {
-        res.redirect('/');
+        res.redirect('/obrigado-pelo-contato');
       }
 
     });
