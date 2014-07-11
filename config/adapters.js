@@ -12,16 +12,18 @@
  * http://sailsjs.org/#documentation
  */
 
+var local = require('./local');
+
 module.exports.adapters = {
 
   'default': 'mongo',
 
   mongo: {
     module: 'sails-mongo',
-    host: sails.config.local.mongo.host,
-    port: sails.config.local.mongo.port,
-    user: sails.config.local.mongo.user,
-    password: sails.config.local.mongo.pass,
-    database: sails.config.local.mongo.db
+    host: local.mongo.host,
+    port: local.mongo.port,
+    user: local.mongo.user,
+    password: local.mongo.pass,
+    database: local.mongo.db
   }
 };
