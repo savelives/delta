@@ -16,18 +16,28 @@
  */
 
 module.exports = {
-    
-  
+
+
   /**
    * Action blueprints:
    *    `/user/create`
    */
-   create: function (req, res) {
-    
-    // Send a JSON response
-    return res.json({
-      hello: 'world'
+  create: function (req, res, next) {
+
+    User.create(req.body, function userCreated(err, user) {
+      if (err) {
+        var createFail = ['Fail'];
+        req.session.flash = {
+          err: createFail
+        }
+        return res.redirect('/');
+      }
+
+      req.session.User = user;
+      res.redirect('/');
+
     });
+
   },
 
 
@@ -35,8 +45,8 @@ module.exports = {
    * Action blueprints:
    *    `/user/destroy`
    */
-   destroy: function (req, res) {
-    
+  destroy: function (req, res) {
+
     // Send a JSON response
     return res.json({
       hello: 'world'
@@ -48,8 +58,8 @@ module.exports = {
    * Action blueprints:
    *    `/user/update`
    */
-   update: function (req, res) {
-    
+  update: function (req, res) {
+
     // Send a JSON response
     return res.json({
       hello: 'world'
@@ -65,5 +75,5 @@ module.exports = {
    */
   _config: {}
 
-  
+
 };
