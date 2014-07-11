@@ -30,7 +30,7 @@ module.exports = {
         req.session.flash = {
           err: createFail
         }
-        return res.redirect('/');
+        return res.redirect('/noooo');
       }
 
       req.session.User = user;
