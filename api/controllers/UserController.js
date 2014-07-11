@@ -25,6 +25,7 @@ module.exports = {
   create: function (req, res, next) {
 
     User.create(req.body, function userCreated(err, user) {
+      console.log(req.body);
       if (err) {
         var createFail = ['Fail'];
         req.session.flash = {
