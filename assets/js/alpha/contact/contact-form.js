@@ -19,9 +19,9 @@ var contactForm = (function (window, document, undefined) {
       message = $('.message-field').val();
 
     var info = {
-      "name": "name",
-      "email": "a@a.com",
-      "message": "messages"
+      "name": name,
+      "email": email,
+      "message": message
     };
 
     var form = $('.contact-form');
