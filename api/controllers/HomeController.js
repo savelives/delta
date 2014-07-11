@@ -16,6 +16,7 @@
  */
 
 var nodemailer = require('nodemailer');
+var validator = require('validator');
 
 module.exports = {
 
