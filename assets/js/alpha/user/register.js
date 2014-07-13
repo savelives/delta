@@ -40,8 +40,8 @@ var userForm = (function (window, document, undefined) {
         console.log('Cool!!');
       });
 
-      ajaxCall.fail(function () {
-        console.log('Noooo!!');
+      ajaxCall.fail(function (err) {
+        console.log('Noooo!! ' + err);
       });
 
       ajaxCall.always(function () {
