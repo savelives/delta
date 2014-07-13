@@ -33,13 +33,13 @@ var userForm = (function (window, document, undefined) {
         data: JSON.stringify(info),
         contentType: 'application/json; charset=utf-8',
         dataType: 'json'
-      }).done(function (response) {
-        console.log('Cool!! ' + response);
-      }).fail(function (data) {
-        console.log('Nooo :( ' + data);
+      }).done(function () {
+        console.log('Cool!!');
+      }).fail(function () {
+        console.log('Nooo :( ');
+      }).always(function () {
+        console.log('Finish!');
       });
-
-      console.log(info);
 
     });
 
