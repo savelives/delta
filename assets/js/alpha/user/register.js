@@ -27,19 +27,27 @@ var userForm = (function (window, document, undefined) {
         "email": email
       };
 
-      $.ajax({
+      // Ajax call
+      var ajaxCall = $.ajax({
         type: 'POST',
         url: 'user/create',
         data: JSON.stringify(info),
         contentType: 'application/json; charset=utf-8',
         dataType: 'json'
-      }).done(function () {
-        console.log('Cool!!');
-      }).fail(function () {
-        console.log('Nooo :( ');
-      }).always(function () {
-        console.log('Finish!');
       });
+
+      ajaxCall.done(function () {
+        console.log('Cool!!');
+      });
+
+      ajaxCall.fail(function () {
+        console.log('Noooo!!');
+      });
+
+      ajaxCall.always(function () {
+        console.log('Finish!!');
+      });
+
 
     });
 
