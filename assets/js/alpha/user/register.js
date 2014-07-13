@@ -16,30 +16,32 @@ var userForm = (function (window, document, undefined) {
 
     var form = $('.register-user-form');
 
-    // var name = $('.name-field').val(),
-    //   email = $('.email-field').val()
+    $(form).submit(function (event) {
+      event.preventDefault();
 
-    // var info = {
-    //   "name": name,
-    //   "email": email
-    // };
+      var name = $('.name-field').val(),
+        email = $('.email-field').val()
 
-    // $(form).submit(function (event) {
-    //   event.preventDefault();
-    //   $.ajax({
-    //     async: false,
-    //     type: 'POST',
-    //     url: 'user/create',
-    //     data: JSON.stringify(info),
-    //     contentType: 'application/json; charset=utf-8',
-    //     dataType: 'json'
-    //   }).done(function (response) {
-    //     console.log('Cool!! ' + response);
-    //   }).fails(function (data) {
-    //     console.log('Nooo :( ' + data);
-    //   });
+      var info = {
+        "name": name,
+        "email": email
+      };
 
-    // });
+      $.ajax({
+        type: 'POST',
+        url: 'user/create',
+        data: JSON.stringify(info),
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json'
+      }).done(function (response) {
+        console.log('Cool!! ' + response);
+      }).fail(function (data) {
+        console.log('Nooo :( ' + data);
+      });
+
+      console.log(info);
+
+    });
 
   };
 
