@@ -35,7 +35,7 @@ module.exports = {
       }
 
       req.session.User = user;
-      res.redirect('/');
+      res.redirect('/', 200);
 
     });
 
