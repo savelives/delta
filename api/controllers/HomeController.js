@@ -28,10 +28,6 @@ module.exports = {
 
   contact: function (req, res) {
 
-    var name = req.body.name,
-      email = req.body.email,
-      message = req.body.message;
-
     var smtpTrans = nodemailer.createTransport('SMTP', {
       service: sails.config.gmail.service,
       auth: {
@@ -39,6 +35,10 @@ module.exports = {
         pass: sails.config.gmail.auth.pass
       }
     });
+
+    var name = req.body.name,
+      email = req.body.email,
+      message = req.body.message;
 
     // TODO: Figure out why the heck I can't pass the sender information to email receiver
     var mailOptions = {
@@ -54,7 +54,7 @@ module.exports = {
         console.log(':(' + error);
         console.log(mailOptions);
       } else {
-        res.redirect('/obrigado-pelo-contato');
+        res.json(response);
       }
 
     });
