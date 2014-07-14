@@ -14,35 +14,40 @@ var contactForm = (function (window, document, undefined) {
 
   contactForm.sendEmail = function () {
 
-    var name = $('.contact-name-field').val(),
-      email = $('.contact-email-field').val(),
-      message = $('.message-field').val();
-
-    var info = {
-      "name": name,
-      "email": email,
-      "message": message
-    };
-
     var form = $('.contact-form');
-    var formData = $(form).serialize();
 
     $(form).submit(function (event) {
+      event.preventDefault();
 
-      // event.preventDefault();
-      // $.ajax({
-      //   type: 'POST',
-      //   url: 'home/contact',
-      //   data: JSON.stringify(info),
-      //   contentType: 'application/json; charset=utf-8',
-      //   dataType: 'json'
-      // }).done(function (response) {
-      //   console.log('Yeah!' + response);
-      //   console.log(JSON.stringify(info));
-      // }).fail(function (data) {
-      //   console.log(':(' + data);
-      //   console.log(JSON.stringify(info));
-      // });
+      var name = $('.contact-name-field').val(),
+        email = $('.contact-email-field').val(),
+        message = $('.message-field').val();
+
+      var info = {
+        "name": name,
+        "email": email,
+        "message": message
+      };
+
+      var contactAjax = $.ajax({
+        type: 'POST',
+        url: 'home/contact',
+        data: JSON.stringify(info),
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json'
+      });
+
+      contactAjax.done(function (response) {
+        console.log('Yeah!' + response);
+      })
+
+      contactAjax.fail(function (data) {
+        console.log(':(' + data);
+      });
+
+      contactAjax.always(function () {
+        console.log('Finish!!!');
+      });
 
       $('.btn-send-message').text('Aguarde...').attr('disabled', 'disabled');
     });
