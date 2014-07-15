@@ -38,10 +38,6 @@ module.exports.routes = {
 
   '/privacidade': {
     view: 'privacidade/index'
-  },
-
-  '/obrigado-pelo-contato': {
-    view: 'contact/thanks'
   }
 
   /*
