@@ -30,7 +30,7 @@ var userForm = (function (window, document, undefined) {
       // Ajax call
       var ajaxCall = $.ajax({
         type: 'POST',
-        url: 'user/create',
+        url: 'home/register',
         data: JSON.stringify(info),
         contentType: 'application/json; charset=utf-8',
         dataType: 'json'
