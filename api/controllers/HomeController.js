@@ -94,13 +94,13 @@ module.exports = {
       req.session.flash = {};
     });
 
-  }
+  },
 
   /**
    * Overrides for the settings in `config/controllers.js`
    * (specific to HomeController)
    */
-  _config: {},
+  _config: {}
 
 
 };
