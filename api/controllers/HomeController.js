@@ -25,9 +25,7 @@ module.exports = {
    * @return {obj}     Return obj view
    */
   index: function (req, res) {
-    res.locals.flash = _.clone(req.session.flash);
     res.view();
-    req.session.flash = {};
   },
 
   /**
@@ -91,7 +89,6 @@ module.exports = {
       }
 
       res.json(user);
-      req.session.flash = {};
     });
 
   },
