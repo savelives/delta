@@ -21,11 +21,20 @@ var validator = require('validator');
 module.exports = {
 
   /**
-   * Overrides for the settings in `config/controllers.js`
-   * (specific to HomeController)
+   * Index Action
+   * @return {obj}     Return obj view
    */
-  _config: {},
+  index: function (req, res) {
+    res.locals.flash = _.clone(req.session.flash);
+    res.view();
+    req.session.flash = {};
+  },
 
+  /**
+   * Contact Action
+   * @param  {req} Requistion
+   * @param  {res} Response
+   */
   contact: function (req, res) {
 
     var smtpTrans = nodemailer.createTransport('SMTP', {
@@ -59,7 +68,39 @@ module.exports = {
 
     });
 
+  },
+
+  /**
+   * Register Action - User registration
+   * @param  {req} Requistion
+   * @param  {res} Response
+   * @param  {Function} next [description]
+   */
+  register: function (req, res, next) {
+
+    Home.create(req.body, function userCreated(err, user) {
+      console.log(req.body);
+      if (err) {
+        console.log(err);
+        // var createFail = ['Fail'];
+        req.session.flash = {
+          err: err
+        }
+
+        return res.redirect('/home/index');
+      }
+
+      res.json(user);
+      req.session.flash = {};
+    });
+
   }
+
+  /**
+   * Overrides for the settings in `config/controllers.js`
+   * (specific to HomeController)
+   */
+  _config: {},
 
 
 };
