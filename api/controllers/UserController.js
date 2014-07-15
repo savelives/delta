@@ -17,7 +17,15 @@
 
 module.exports = {
 
-
+  /**
+   * Index View
+   * @return {obj} return view object
+   */
+  index: function (req, res) {
+    res.locals.flash = _.clone(req.session.flash);
+    res.view();
+    req.session.flash = {};
+  },
   /**
    * Action blueprints:
    *    `/user/create`
@@ -27,16 +35,17 @@ module.exports = {
     User.create(req.body, function userCreated(err, user) {
       console.log(req.body);
       if (err) {
-        var createFail = ['Fail'];
+        console.log(err);
+        // var createFail = ['Fail'];
         req.session.flash = {
-          err: createFail
+          err: err
         }
-        return res.redirect('/noooo');
+
+        return res.redirect('/user/index');
       }
 
-      req.session.User = user;
       res.json(user);
-
+      req.session.flash = {};
     });
 
   },
