@@ -7,19 +7,13 @@
       <p>Se você tem a iniciativa de ser um doador de sangue ou de contribuir nesta causa, <br> <strong>cadastre-se</strong> para saber mais.</p>
 
       <section class="register-now">
-        <form class="register-user-form" method="post" action="user/create">
+        <form class="register-user-form" method="post" action="home/register">
           <input class="name-field" type="text" id="name" name="name" placeholder="Nome">
           <input class="email-field" type="text" id="email" name="email" placeholder="E-mail">
           <button class="btn btn-register-now" type="submit"><span>Cadastre-se</span></button>
         </form>
 
-        <% if(flash && flash.err) { %>
-          <ul class="alert alert-error">
-          <% Object.keys(flash.err).forEach(function (error) { %>
-          <li><%- JSON.stringify(flash.err[error]) %></li>
-          <% }) %>
-          </ul>
-        <% } %>
+
 
       </section>
 
