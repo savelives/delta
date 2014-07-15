@@ -12,6 +12,15 @@
           <input class="email-field" type="text" id="email" name="email" placeholder="E-mail">
           <button class="btn btn-register-now" type="submit"><span>Cadastre-se</span></button>
         </form>
+
+        <% if(flash && flash.err) { %>
+          <ul class="alert alert-error">
+          <% Object.keys(flash.err).forEach(function (error) { %>
+          <li><%- JSON.stringify(flash.err[error]) %></li>
+          <% }) %>
+          </ul>
+        <% } %>
+
       </section>
 
       <small class="disclaimer-info">O cadastro é gratuito e garante a sua privacidade. <br> Você receberá informações sobre as etapas do projeto SaveLives.</small>
