@@ -13,13 +13,13 @@
           <button class="btn btn-register-now" type="submit"><span>Cadastre-se</span></button>
         </form>
 
-        <%- req.flash('message') %>
-        <% if(flash && flash.err) { %>
-          <ul class="alert alert-error">
-          <% Object.keys(flash.err).forEach(function (error) { %>
-          <li><%- JSON.stringify(flash.err[error]) %></li>
-          <% }) %>
-          </ul>
+        <% if(req.flash && req.flash.err) { %>
+        <script>alert(<%-JSON.stringify(req.flash)%>)</script>
+        <ul class="alert alert-danger">
+            <% Object.keys(req.flash.err).forEach(function(error) { %>
+            <li><%- JSON.stringify(req.flash.err[error]) %></li>
+            <% }) %>
+        </ul>
         <% } %>
 
       </section>

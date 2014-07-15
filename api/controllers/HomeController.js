@@ -24,7 +24,7 @@ module.exports = {
    * Index Action
    * @return {obj}     Return obj view
    */
-  index: function (req, res) {
+  'index': function (req, res) {
     res.view();
   },
 
@@ -76,11 +76,31 @@ module.exports = {
    */
   register: function (req, res, next) {
 
-    Home.create(req.body, function userCreated(err, user) {
+    var usrObj = {
+      name: req.param('name'),
+      email: req.param('email')
+    }
+
+    Home.create(usrObj, function userCreated(err, user) {
       console.log(req.body);
+
+      var name = req.body.name;
+      var email = req.body.email;
+
+      console.log(validator.isLength(name, 2));
+      console.log(validator.isEmail(email));
+
+
       if (err) {
-        console.log(err);
-        // var createFail = ['Fail'];
+        // console.log(JSON.stringify(err));
+        // var error = ['Ops!!!'];
+        // req.flash = {
+        //   err: error
+        // }
+        // req.flash('error', 'Duplicate email address');
+        // var wtf = req.flash('error', 'Duplicate email address');
+        // console.log(req.flash('error'));
+
         req.session.flash = {
           err: err
         }
