@@ -55,13 +55,23 @@ module.exports = {
       html: name + '<br>' + email + '<br>' + message
     };
 
-    smtpTrans.sendMail(mailOptions, function (error, response) {
+    var isValidName = validator.isLength(name, 2);
+    var isValidEmail = validator.isEmail(email);
 
-      if (error) {
-        console.log(':(' + error);
+    smtpTrans.sendMail(mailOptions, function (err, response) {
+
+      if (err) {
+        console.log(':(' + err);
         console.log(mailOptions);
+        req.flash = {
+          err: err
+        }
+
+        return res.redirect('/home/index');
       } else {
-        res.json(response);
+        if (isValidName && isValidEmail) {
+          res.json(response);
+        }
       }
 
     });
