@@ -161,6 +161,19 @@
   padding-top: 20px;
 }
 
+.register-success {
+  span {
+    color: $agreen;
+  }
+  margin-top: 40px;
+  p {
+    @include font-size(2.4);
+    color: $awhite;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
 .btn-register-now {
   float: right;
   margin: 0;
