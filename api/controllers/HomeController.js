@@ -90,25 +90,22 @@ module.exports = {
       console.log(validator.isLength(name, 2));
       console.log(validator.isEmail(email));
 
+      var isValidName = validator.isLength(name, 2);
+      var isValidEmail = validator.isEmail(email);
 
       if (err) {
-        // console.log(JSON.stringify(err));
-        // var error = ['Ops!!!'];
-        // req.flash = {
-        //   err: error
-        // }
-        // req.flash('error', 'Duplicate email address');
-        // var wtf = req.flash('error', 'Duplicate email address');
-        // console.log(req.flash('error'));
-
-        req.session.flash = {
+        req.flash = {
           err: err
         }
 
         return res.redirect('/home/index');
       }
 
-      res.json(user);
+      if (isValidName && isValidEmail) {
+        res.json(user);
+      } else {
+        console.log('Holy sh*1t!');
+      }
     });
 
   },
