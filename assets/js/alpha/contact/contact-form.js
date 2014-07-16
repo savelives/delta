@@ -42,7 +42,7 @@ var contactForm = (function (window, document, undefined) {
 
       contactAjax.done(function (response) {
         $(form).addClass('is-hidden');
-        $('.contact-success').removeClass('isHidden');
+        $('.contact-success').removeClass('is-hidden');
       })
 
       contactAjax.fail(function (data) {
@@ -52,8 +52,6 @@ var contactForm = (function (window, document, undefined) {
       contactAjax.always(function () {
         console.log('Finish!!!');
       });
-
-      $('.btn-send-message').text('Aguarde...').attr('disabled', 'disabled');
     });
 
   };
