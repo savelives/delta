@@ -40,6 +40,7 @@ var userForm = (function (window, document, undefined) {
 
       ajaxCall.done(function () {
         console.log('Cool!!');
+        $(form).hide();
       });
 
       ajaxCall.fail(function (err) {
@@ -73,11 +74,11 @@ var userForm = (function (window, document, undefined) {
       },
       messages: {
         name: {
-          required: 'Digite seu nome.'
+          required: '* Digite o seu nome.'
         },
         email: {
-          required: 'Digite seu e-mail',
-          email: 'Digite um e-mail válido!'
+          required: '* Digite o seu endereço de e-mail',
+          email: '* Digite um e-mail válido!'
         }
       },
       success: function (element) {
