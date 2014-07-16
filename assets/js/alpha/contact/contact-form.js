@@ -54,6 +54,43 @@ var contactForm = (function (window, document, undefined) {
 
   };
 
+  contactForm.validate = function (form) {
+    form.validate({
+      errorLabelContainer: $('.contact-errors-container'),
+      rules: {
+        name: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true
+        }
+      },
+      messages: {
+        name: {
+          required: '* Digite o seu nome.'
+        },
+        email: {
+          required: '* Digite o seu endereço de e-mail',
+          email: '* Digite um e-mail válido!'
+        },
+        message: {
+          required: '* Digite a sua mensagem.'
+        }
+      },
+      success: function (element) {
+        element.text('');
+      }
+    });
+  };
+
+  contactForm.refresh = function () {
+
+  };
+
   return contactForm.init();
 
 })(window, document);
