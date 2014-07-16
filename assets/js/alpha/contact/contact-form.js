@@ -16,6 +16,8 @@ var contactForm = (function (window, document, undefined) {
 
     var form = $('.contact-form');
 
+    this.validate(form);
+
     $(form).submit(function (event) {
       event.preventDefault();
 
