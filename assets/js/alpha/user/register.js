@@ -46,7 +46,7 @@ var userForm = (function (window, document, undefined) {
       });
 
       ajaxCall.fail(function (err) {
-        alert('Ops, ocorreu algum erro inesperado! Por favor, tente novamente!');
+        // alert('Ops, ocorreu algum erro inesperado! Por favor, tente novamente!');
       });
 
       ajaxCall.always(function () {
