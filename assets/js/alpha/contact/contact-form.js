@@ -10,6 +10,7 @@ var contactForm = (function (window, document, undefined) {
 
   contactForm.init = function () {
     this.sendEmail();
+    this.refresh();
   };
 
   contactForm.sendEmail = function () {
@@ -40,7 +41,8 @@ var contactForm = (function (window, document, undefined) {
       });
 
       contactAjax.done(function (response) {
-        console.log('Yeah!' + response);
+        $(form).addClass('is-hidden');
+        $('.contact-success').removeClass('isHidden');
       })
 
       contactAjax.fail(function (data) {
@@ -90,7 +92,17 @@ var contactForm = (function (window, document, undefined) {
   };
 
   contactForm.refresh = function () {
+    var form = $('.contact-form');
+    var successContent = $('.contact-success');
+    var refreshMe = $('.contact-success p');
 
+    $(successContent).on('click', refreshMe, function () {
+      successContent.addClass('is-hidden');
+      form.removeClass('is-hidden');
+      $('.contact-name-field').val('');
+      $('.contact-email-field').val('');
+      $('.message-field').val('');
+    });
   };
 
   return contactForm.init();
