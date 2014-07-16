@@ -40,14 +40,13 @@ var userForm = (function (window, document, undefined) {
       });
 
       ajaxCall.done(function () {
-        console.log('Cool!!');
         $(form).addClass('is-hidden');
         $('.initiative-title-sub-title').addClass('is-hidden');
         $('.register-success').removeClass('is-hidden');
       });
 
       ajaxCall.fail(function (err) {
-        console.log('Noooo!! ' + err);
+        alert('Ops, ocorreu algum erro inesperado! Por favor, tente novamente!');
       });
 
       ajaxCall.always(function () {
