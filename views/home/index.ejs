@@ -13,14 +13,9 @@
           <button class="btn btn-register-now" type="submit"><span>Cadastre-se</span></button>
         </form>
 
-        <% if(flash && flash.err) { %>
-        <script>alert(<%-JSON.stringify(flash)%>)</script>
-        <ul class="alert alert-danger">
-            <% Object.keys(flash.err).forEach(function(error) { %>
-            <li><%- JSON.stringify(flash.err[error]) %></li>
-            <% }) %>
-        </ul>
-        <% } %>
+        <div class="errors-container">
+
+        </div>
 
       </section>
 
