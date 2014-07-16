@@ -22,7 +22,6 @@
   ],
   "dependencies": {
     "jquery": "~2.1.1",
-    "validator-js": "~3.16.1",
     "lodash": "~2.4.1",
     "jquery-validation": "~1.13.0"
   }
