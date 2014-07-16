@@ -16,6 +16,8 @@ var userForm = (function (window, document, undefined) {
 
     var form = $('.register-user-form');
 
+    this.validate(form);
+
     $(form).submit(function (event) {
       event.preventDefault();
 
@@ -51,6 +53,35 @@ var userForm = (function (window, document, undefined) {
 
     });
 
+  };
+
+  userForm.validate = function (form) {
+
+    $('.btn-register-now').addClass('btn-disabled').attr('disabled', 'disabled');
+
+    form.validate({
+      errorLabelContainer: $(".errors-container"),
+      rules: {
+        name: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: 'Digite seu nome.',
+        email: {
+          required: 'Digite seu e-mail.',
+          email: 'Digite um e-mail válido!'
+        }
+      },
+      success: function (element) {
+        element.text('');
+        $('.btn-register-now').removeClass('btn-disabled').attr('disabled', false);
+      }
+    });
   };
 
   return userForm.init();
