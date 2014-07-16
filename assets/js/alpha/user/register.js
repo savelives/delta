@@ -10,6 +10,7 @@ var userForm = (function (window, document, undefined) {
 
   userForm.init = function () {
     this.register();
+    this.refresh();
   };
 
   userForm.register = function () {
@@ -40,7 +41,9 @@ var userForm = (function (window, document, undefined) {
 
       ajaxCall.done(function () {
         console.log('Cool!!');
-        $(form).hide();
+        $(form).addClass('is-hidden');
+        $('.initiative-title-sub-title').addClass('is-hidden');
+        $('.register-success').removeClass('is-hidden');
       });
 
       ajaxCall.fail(function (err) {
@@ -85,6 +88,21 @@ var userForm = (function (window, document, undefined) {
         element.text('');
       }
     });
+  };
+
+  userForm.refresh = function () {
+    var form = $('.register-user-form');
+    var successContent = $('.register-success');
+    var refreshMe = $('.register-success p');
+
+    $(successContent).on('click', refreshMe, function () {
+      successContent.addClass('is-hidden');
+      form.removeClass('is-hidden');
+      $('.initiative-title-sub-title').removeClass('is-hidden');
+      $('.name-field').val('');
+      $('.email-field').val('');
+    });
+
   };
 
   return userForm.init();
