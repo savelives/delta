@@ -52,6 +52,24 @@ button {
   @include font-size(2.4);
 }
 
+textarea,
+input {
+  color: $aagreen;
+}
+
+textarea.error,
+input.error {
+  border: 1px solid $pinkred;
+}
+
+label.error {
+  color: $awhite;
+  @include font-size(1.8);
+  font-weight: 300;
+  line-height: 25px;
+  display: block;
+}
+
 /*------------------------------------*\
   Main Header
 \*------------------------------------*/
