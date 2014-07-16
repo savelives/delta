@@ -287,7 +287,7 @@
     cursor: pointer;
     width: 170px;
     height: auto;
-    min-height: 180px;
+    min-height: 210px;
     float: left;
     margin: 30px 11px 10px 11px;
     @extend .cf;
@@ -325,7 +325,7 @@
 }
 
 .wc-info {
-  @include font-size(1.6);
+  @include font-size(1.8);
   font-weight: 300;
   line-height: 20px;
   color: $text-gb;
@@ -336,8 +336,8 @@
 
 .info-women-men {
   position: relative;
-  margin-top: 80px;
-  padding: 40px 0;
+  margin-top: 60px; // 80
+  padding: 50px 0; // 40 0
   text-align: center;
   h4 {
     @include font-size(1.8);
