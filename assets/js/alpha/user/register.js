@@ -57,10 +57,11 @@ var userForm = (function (window, document, undefined) {
 
   userForm.validate = function (form) {
 
-    $('.btn-register-now').addClass('btn-disabled').attr('disabled', 'disabled');
+    // $('.btn-register-now').addClass('btn-disabled').attr('disabled', 'disabled');
+    // $('.btn-register-now').removeClass('btn-disabled').attr('disabled', false);
 
     form.validate({
-      errorLabelContainer: $(".errors-container"),
+      errorLabelContainer: $('.errors-container'),
       rules: {
         name: {
           required: true
@@ -71,15 +72,16 @@ var userForm = (function (window, document, undefined) {
         }
       },
       messages: {
-        name: 'Digite seu nome.',
+        name: {
+          required: 'Digite seu nome.'
+        },
         email: {
-          required: 'Digite seu e-mail.',
+          required: 'Digite seu e-mail',
           email: 'Digite um e-mail válido!'
         }
       },
       success: function (element) {
         element.text('');
-        $('.btn-register-now').removeClass('btn-disabled').attr('disabled', false);
       }
     });
   };
