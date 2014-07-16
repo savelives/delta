@@ -28,6 +28,6 @@ var app = (function (window, document, undefined) {
     });
   };
 
-  return this.init();
+  return app.init();
 
 })(window, document);
