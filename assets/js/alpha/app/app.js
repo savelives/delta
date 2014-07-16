@@ -10,10 +10,10 @@ var app = (function (window, document, undefined) {
   var app = {};
 
   app.init = function () {
-    this.scroll();
+    this.smothScroll();
   };
 
-  app.scroll = function () {
+  app.smothScroll = function () {
     $('a[href=*=#]:not([href=#])').click(function () {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
