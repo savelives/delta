@@ -23,7 +23,7 @@ var info = (function (window, document, undefined) {
 
   info.carrouselInfo = function () {
     $('.np-arrow').on('click', function () {
-      $('.wm-info:visible').hide().siblings('.wm-info').show();
+      $('.wm-info:visible').hide().siblings('.wm-info').show().addClass('animated fadeInLeft');
     });
   };
 
