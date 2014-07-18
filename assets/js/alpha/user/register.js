@@ -20,6 +20,7 @@ var userForm = (function (window, document, undefined) {
     this.validate(form);
 
     $(form).submit(function (event) {
+      NProgress.start();
       event.preventDefault();
 
       var name = $('.name-field').val(),
@@ -51,6 +52,7 @@ var userForm = (function (window, document, undefined) {
 
       ajaxCall.always(function () {
         console.log('Finish!!');
+        NProgress.finish();
       });
 
 
