@@ -386,12 +386,13 @@
 
 .np-arrow {
   position: absolute;
-  top: 80px;
+  top: 91px;
   background: url('../../img/img-sprites.png') no-repeat;
   width: 9px;
   height: 20px;
   display: inline-block;
   cursor: pointer;
+  z-index: 999999;
 }
 
 .np-arrow-prev {
