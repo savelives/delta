@@ -48,11 +48,12 @@ var userForm = (function (window, document, undefined) {
 
       ajaxCall.fail(function (err) {
         // alert('Ops, ocorreu algum erro inesperado! Por favor, tente novamente!');
+        NProgress.done();
       });
 
       ajaxCall.always(function () {
         console.log('Finish!!');
-        NProgress.finish();
+        NProgress.done();
       });
 
 
