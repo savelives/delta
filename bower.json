@@ -23,6 +23,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "lodash": "~2.4.1",
-    "jquery-validation": "~1.13.0"
+    "jquery-validation": "~1.13.0",
+    "nprogress": "~0.1.6"
   }
 }
