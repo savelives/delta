@@ -20,6 +20,7 @@ var contactForm = (function (window, document, undefined) {
     this.validate(form);
 
     $(form).submit(function (event) {
+      NProgress.start();
       event.preventDefault();
 
       var name = $('.contact-name-field').val(),
@@ -51,6 +52,7 @@ var contactForm = (function (window, document, undefined) {
 
       contactAjax.always(function () {
         console.log('Finish!!!');
+        NProgress.end();
       });
     });
 
