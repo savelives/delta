@@ -47,7 +47,7 @@ var contactForm = (function (window, document, undefined) {
       })
 
       contactAjax.fail(function (data) {
-        console.log(':(' + data);
+        NProgress.done();
       });
 
       contactAjax.always(function () {
