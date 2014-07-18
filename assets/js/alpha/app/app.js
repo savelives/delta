@@ -13,6 +13,7 @@ var app = (function (window, document, undefined) {
     this.smothScroll();
   };
 
+  // SmothScroll
   app.smothScroll = function () {
     $('a[href*=#]:not([href=#])').click(function () {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
