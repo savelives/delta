@@ -52,7 +52,7 @@ var contactForm = (function (window, document, undefined) {
 
       contactAjax.always(function () {
         console.log('Finish!!!');
-        NProgress.end();
+        NProgress.done();
       });
     });
 
