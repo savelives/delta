@@ -17,10 +17,7 @@ body {
 }
 
 .wrap {
-  width: 60em;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  @include outer-container;
 }
 
 h1, h2, h3, h4, h5, h6 {
