@@ -45,7 +45,7 @@
 }
 
 .arrow-down-w {
-  background-position: -116px -5px;
+  background-position: -139px -12px;
   width: 25px;
   height: 15px;
 }
@@ -308,7 +308,7 @@
 }
 
 .symbol-check-positive {
-  background-position: -2px -44px;
+  background-position: -4px -48px;
   width: 45px;
   height: 45px;
   // &:hover {
@@ -319,7 +319,7 @@
 }
 
 .symbol-check-negative {
-  background-position: -182px -44px;
+  background-position: -108px -47px;
   width: 45px;
   height: 45px;
 }
@@ -388,8 +388,8 @@
   position: absolute;
   top: 91px;
   background: url('../../img/img-sprites.png') no-repeat;
-  width: 9px;
-  height: 20px;
+  width: 11px;
+  height: 22px;
   display: inline-block;
   cursor: pointer;
   z-index: 999999;
