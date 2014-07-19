@@ -322,6 +322,11 @@
   background-position: -108px -47px;
   width: 45px;
   height: 45px;
+  &:hover {
+    background-position: -159px -46px;
+    width: 47px;
+    height: 47px;
+  }
 }
 
 .wc-info {
