@@ -1,18 +1,18 @@
 /*! SaveLives pre-alpha */
 
 // Helpers
-@import "helpers/colors";
-@import "helpers/helpers";
+@import 'helpers/colors';
+@import 'helpers/helpers';
 
 // Import vendor's files
-@import "vendor/normalize";
-@import "vendor/animate";
-@import "vendor/nprogress";
+@import 'vendor/normalize';
+@import 'vendor/animate';
+@import 'vendor/nprogress';
 @import 'vendor/bourbon/bourbon';
 @import 'vendor/neat/neat';
 
 // Base
-@import "base";
+@import 'base';
 
 // Import views files
-@import "views/index";
+@import 'views/index';
