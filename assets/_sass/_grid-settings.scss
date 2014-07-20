@@ -3,5 +3,9 @@
 \*------------------------------------*/
 @import 'vendor/neat/neat-helpers';
 
-$max-width: em(960);
 $visual-grid: true;
+
+$max-width: em(960);
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
