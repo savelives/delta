@@ -72,7 +72,9 @@ label.error {
   Main Header
 \*------------------------------------*/
 .main-header {
-  position: fixed;
+  @include media($desktop) {
+    position: fixed;
+  }
   background: $ablue;
   top: 0;
   right: 0;
