@@ -8,7 +8,11 @@
 
 .name-field,
 .email-field {
-  width: 368px;
+  @include span-columns(5);
+  @include omega(2n);
+  @include media($mobile) {
+    @include span-columns(4);
+  }
   height: 50px;
 }
 
