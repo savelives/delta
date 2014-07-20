@@ -9,7 +9,7 @@ $visual-grid-index: front;
 
 $max-width: em(960);
 
-
 $desktop: new-breakpoint(min-width 50em 12);
 $tablet: new-breakpoint(max-width 50em 8);
 $mobile: new-breakpoint(max-width 30em 4);
+$mobile-landscape: new-breakpoint(max-width orientation 'landscape' 30em 4);
