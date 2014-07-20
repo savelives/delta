@@ -21,6 +21,9 @@ body {
   @include media($mobile) {
     padding: 0 20px;
   }
+  @include media($tablet) {
+    padding: 0 20px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,9 +75,7 @@ label.error {
   Main Header
 \*------------------------------------*/
 .main-header {
-  @include media($desktop) {
-    position: fixed;
-  }
+  position: fixed;
   background: $ablue;
   top: 0;
   right: 0;
@@ -97,8 +98,10 @@ label.error {
 }
 
 .main-menu {
-  position: relative;
-  float: right;
+  @include media($desktop) {
+    position: relative;
+    float: right;
+  }
   li {
     display: inline-block;
     margin-top: 15px;
