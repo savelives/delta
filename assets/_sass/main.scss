@@ -5,10 +5,17 @@
 @import 'helpers/helpers';
 
 // Import vendor's files
+// Normalize
 @import 'vendor/normalize';
+// Animate by Dan Eden
 @import 'vendor/animate';
+// NProgress
 @import 'vendor/nprogress';
+// Bourbon
 @import 'vendor/bourbon/bourbon';
+// Override Bourbon Defaults
+@import 'grid-settings';
+// Borbon Neat
 @import 'vendor/neat/neat';
 
 // Base
