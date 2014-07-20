@@ -12,6 +12,7 @@
   @include omega(2n);
   @include media($mobile) {
     @include span-columns(4);
+    margin-bottom: 20px;
   }
   height: 50px;
 }
