@@ -18,6 +18,9 @@ body {
 
 .wrap {
   @include outer-container;
+  @include media($mobile) {
+    padding: 0 20px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
