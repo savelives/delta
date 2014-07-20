@@ -10,6 +10,6 @@ $visual-grid-index: front;
 $max-width: em(960);
 
 
-$desktop: new-breakpoint(min-width 800px 12);
-$tablet: new-breakpoint(max-width 800px 8);
-$mobile: new-breakpoint(max-width 480px 4);
+$desktop: new-breakpoint(min-width 50em 12);
+$tablet: new-breakpoint(max-width 50em 8);
+$mobile: new-breakpoint(max-width 30em 4);
