@@ -408,7 +408,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('compileAssets', [
-    'clean:dev',
+    // 'clean:dev',
     'sass:dev',
     'uglify',
     'copy:dev'
