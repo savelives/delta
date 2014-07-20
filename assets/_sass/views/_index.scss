@@ -15,12 +15,11 @@
 .contact-name-field,
 .contact-email-field {
   @include span-columns(6);
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  @include omega(2n);
   height: 50px;
-}
-
-.name-field,
-.contact-name-field {
-  margin-right: 17px;
 }
 
 .big-title {
