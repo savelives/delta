@@ -3,7 +3,9 @@
 \*------------------------------------*/
 @import 'vendor/neat/neat-helpers';
 
+// Remove this on production
 $visual-grid: true;
+$visual-grid-index: front;
 
 $max-width: em(960);
 
