@@ -92,6 +92,7 @@ label.error {
 
 .logo {
   margin: 10px 0 0 0;
+  display: inline-block;
 }
 
 .logo-link {
@@ -103,11 +104,17 @@ label.error {
   @include media($desktop) {
     position: relative;
     float: right;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  @include media($tablet) {
+    position: relative;
+    right: -70%;
   }
   li {
-    display: inline-block;
     margin-top: 15px;
-    margin-left: 20px;
     font-size: rem(16);
     text-transform: uppercase;
     a {
