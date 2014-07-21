@@ -151,6 +151,9 @@ label.error {
   li {
     display: inline-block;
     margin: 0 50px;
+    @include media($mobile) {
+      margin-bottom: 50px;
+    }
   }
 }
 
