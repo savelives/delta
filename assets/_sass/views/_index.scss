@@ -262,14 +262,16 @@
     }
   }
   ul {
-    display: inline-block;
     @include media($desktop) {
+      display: inline-block;
       margin-left: 55px;
     }
   }
   li {
-    position: relative;
-    float: left;
+    @include media($desktop) {
+      position: relative;
+      float: left;
+    }
     display: block;
     margin: 0 0.25em;
     border: 1px solid $agrey;
