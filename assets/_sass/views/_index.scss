@@ -177,6 +177,10 @@
   margin-top: 40px;
 }
 
+.contact-form {
+  @extend .cf;
+}
+
 .contact-errors-container,
 .errors-container {
   @include span-columns(4);
