@@ -398,6 +398,14 @@
   }
 }
 
+.info-women,
+.info-men {
+  @include media($tablet) {
+    @include span-columns(4);
+    @include shift(2);
+  }
+}
+
 .info-women {
   small {
     &:before {
