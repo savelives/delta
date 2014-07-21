@@ -319,9 +319,8 @@
   @extend .cf;
   li {
     @include media($tablet) {
-      @include span-columns(2);
-      @include shift(1);
-      // @include omega(4n);
+      @include span-columns(3 of 6);
+      @include omega;
     }
     @include media($mobile) {
       @include span-columns(2);
