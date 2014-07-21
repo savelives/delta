@@ -173,11 +173,13 @@
 }
 
 .register-now {
+  @extend .cf;
   margin-top: 40px;
 }
 
 .contact-errors-container,
 .errors-container {
+  @include span-columns(4);
   padding-top: 20px;
 }
 
