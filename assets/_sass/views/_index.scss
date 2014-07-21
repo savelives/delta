@@ -26,6 +26,9 @@
   @include media($mobile-landscape) {
     @include span-columns(4);
   }
+  @include media($tablet) {
+    @include span-columns(8);
+  }
   @include omega(2n);
   height: 50px;
   margin-bottom: 20px;
