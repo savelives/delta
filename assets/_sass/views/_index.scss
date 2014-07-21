@@ -263,7 +263,9 @@
   }
   ul {
     display: inline-block;
-    margin-left: 55px;
+    @include media($desktop) {
+      margin-left: 55px;
+    }
   }
   li {
     position: relative;
