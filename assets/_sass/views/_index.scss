@@ -14,6 +14,14 @@
     @include span-columns(4);
     margin-bottom: 20px;
   }
+  @include media($mobile-landscape) {
+    @include span-columns(4);
+    margin-bottom: 20px;
+  }
+  @include media($tablet) {
+    @include span-columns(8);
+    margin-bottom: 20px;
+  }
   height: 50px;
 }
 
@@ -191,6 +199,13 @@
   @include span-columns(2);
   @include media($mobile) {
     @include span-columns(4);
+  }
+  @include media($mobile-landscape) {
+    @include span-columns(4);
+  }
+  @include media($tablet) {
+    @include span-columns(8);
+    margin-bottom: 20px;
   }
   float: right;
   margin: 0;
@@ -520,5 +535,8 @@
   float: right;
   @include media($mobile) {
     @include span-columns(4);
+  }
+  @include media($tablet) {
+    @include span-columns(8);
   }
 }
