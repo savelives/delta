@@ -319,7 +319,7 @@
   @extend .cf;
   li {
     @include media($tablet) {
-      @include span-columns(3 of 6);
+      @include span-columns(2);
       @include omega;
     }
     @include media($mobile) {
