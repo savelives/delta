@@ -10,7 +10,7 @@ var app = (function (window, document, undefined) {
   var app = {};
 
   app.init = function () {
-    this.onePageScroll();
+    this.smothScroll();
   };
 
   // SmothScroll
@@ -26,13 +26,6 @@ var app = (function (window, document, undefined) {
           return false
         }
       }
-    });
-  };
-
-  app.onePageScroll = function () {
-    $('body').onepage_scroll({
-      sectionContainer: '.wrap-section',
-      easing: 'ease'
     });
   };
 
