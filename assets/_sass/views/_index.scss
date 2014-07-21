@@ -33,7 +33,7 @@
 
 .big-title {
   display: block;
-  @include font-size(4.0);
+  font-size: rem(40);
   line-height: 60px;
   font-weight: 400;
   text-transform: uppercase;
@@ -43,7 +43,7 @@
 .arrow-down {
   position: relative;
   margin: 20px auto 0 auto;
-  @include font-size(1.8);
+  font-size: rem(18);
   text-align: center;
   text-transform: uppercase;
   display: block;
@@ -145,7 +145,7 @@
   padding-top: 70px;
   padding-bottom: 30px;
   p {
-    @include font-size(2.4);
+    font-size: rem(24);
     line-height: 30px;
     font-weight: 300;
     color: $awhite;
@@ -177,7 +177,7 @@
   }
   margin-top: 40px;
   p {
-    @include font-size(2.4);
+    font-size: rem(24);
     color: $awhite;
     text-decoration: underline;
     cursor: pointer;
@@ -197,7 +197,7 @@
   margin-top: 80px;
   display: block;
   color: $awhite;
-  @include font-size(1.4);
+  font-size: rem(14);
   font-weight: 300;
   text-align: center;
 }
@@ -225,7 +225,7 @@
   a {
     color: $agrey;
     display: block;
-    @include font-size(2.2);
+    font-size: rem(22);
     padding: 0.25em 1.25em;
     white-space: nowrap;
     text-transform: uppercase;
@@ -307,7 +307,7 @@
 }
 
 .nal-title {
-  @include font-size(1.6);
+  font-size: rem(16);
   color: $text-gb;
   text-transform: uppercase;
 }
@@ -342,7 +342,7 @@
 }
 
 .wc-info {
-  @include font-size(1.8);
+  font-size: rem(18);
   font-weight: 300;
   line-height: 20px;
   color: $text-gb;
@@ -357,14 +357,14 @@
   padding: 50px 0; // 40 0
   text-align: center;
   h4 {
-    @include font-size(1.8);
+    font-size: rem(18);
     text-transform: uppercase;
     color: $aagreen;
     margin-bottom: 10px;
   }
   small {
     color: $text-gb;
-    @include font-size(1.6);
+    font-size: rem(16);
     font-weight: 300;
     &:before {
       background: url('../../img/img-sprites.png') no-repeat;
@@ -431,7 +431,7 @@
   padding: 50px 0;
   p {
     color: $awhite;
-    @include font-size(2.4);
+    font-size: rem(24);
     font-weight: 300;
     line-height: 30px;
   }
@@ -459,7 +459,7 @@
   height: 450px;
   p {
     color: $text-gb;
-    @include font-size(2.4);
+    font-size: rem(24);
     font-weight: 300;
     line-height: 30px;
     &:last-of-type {
@@ -481,7 +481,7 @@
   width: 160px;
   margin: 30px auto;
   padding: 10px;
-  @include font-size(2.4);
+  font-size: rem(24);
   text-align: center;
   border-radius: 3px;
 }
@@ -492,7 +492,7 @@
   position: relative;
   padding: 90px 0;
   p {
-    @include font-size(2.4);
+    font-size: rem(24);
     font-weight: 300;
     color: $awhite;
     text-align: center;
