@@ -155,6 +155,13 @@
   margin-top: 60px;
   padding-top: 70px;
   padding-bottom: 30px;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 88%;
+  top: 0;
+  left: 0;
+  position: fixed !important;
   p {
     font-size: rem(24);
     line-height: 30px;
