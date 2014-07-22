@@ -49,6 +49,9 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  @include media($tablet) {
+    line-height: 45px;
+  }
   @include media($mobile) {
     line-height: 45px;
   }
@@ -165,12 +168,14 @@
 \*------------------------------------*/
 
 .center-middle {
-  position: absolute;
-  width: 960px;
-  max-width: 100%;
-  top: 50%;
-  left: 50%;
-  @include transform(translate(-50%, -50%));
+  @include media($desktop) {
+    position: absolute;
+    width: 960px;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
   @include media($mobile) {
     padding: 20px;
   }
