@@ -49,6 +49,9 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  @include media($mobile) {
+    line-height: 45px;
+  }
 }
 
 .arrow-down {
@@ -186,6 +189,9 @@
 .initiative-title {
   color: $agreen;
   margin-bottom: 60px;
+  @include media($mobile) {
+    margin-bottom: 40px;
+  }
 }
 
 .register-now {
