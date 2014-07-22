@@ -163,7 +163,18 @@
 /*------------------------------------*\
   Home part
 \*------------------------------------*/
+
+.center-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+}
+
 .home-part {
+  .wrap {
+    @extend .cf;
+  }
   margin-top: 60px;
   padding-top: 70px;
   padding-bottom: 30px;
