@@ -185,7 +185,9 @@
   .wrap {
     @extend .cf;
   }
-  margin-top: 60px;
+  @include media($tablet) {
+    margin-top: 60px;
+  }
   padding-top: 70px;
   padding-bottom: 30px;
   z-index: 1;
