@@ -53,16 +53,17 @@
 
 .big-title {
   display: block;
-  font-size: rem(40);
-  line-height: 60px;
+  font-size: rem(35);
+  line-height: 45px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  word-spacing: 2px;
   @include media($tablet) {
-    line-height: 45px;
+    line-height: 40px;
   }
   @include media($mobile) {
-    line-height: 45px;
+    line-height: 40px;
   }
 }
 
@@ -184,7 +185,7 @@
   margin-top: 60px;
   padding: 70px 0 30px 0;
   p {
-    font-size: rem(24);
+    font-size: rem(22);
     line-height: 30px;
     font-weight: 300;
     color: $awhite;
@@ -503,7 +504,7 @@
   padding: 50px 0;
   p {
     color: $awhite;
-    font-size: rem(24);
+    font-size: rem(22);
     font-weight: 300;
     line-height: 30px;
   }
@@ -531,7 +532,7 @@
   padding: 60px 0;
   p {
     color: $text-gb;
-    font-size: rem(24);
+    font-size: rem(22);
     font-weight: 300;
     line-height: 30px;
     &:last-of-type {
@@ -564,7 +565,7 @@
   position: relative;
   padding: 90px 0;
   p {
-    font-size: rem(24);
+    font-size: rem(22);
     font-weight: 300;
     color: $awhite;
     text-align: center;
