@@ -528,7 +528,16 @@
     line-height: 30px;
   }
   .arrow-down {
-    top: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    left: 0;
+  }
+  @include media($desktop) {
+    height: 680px;
+    .wrap {
+      margin-top: 100px;
+    }
   }
 }
 
