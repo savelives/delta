@@ -43,6 +43,7 @@ var contactForm = (function (window, document, undefined) {
 
       contactAjax.done(function (response) {
         $(form).addClass('is-hidden');
+        $('.invite-to-contact').addClass('is-hidden');
         $('.contact-success').removeClass('is-hidden');
       })
 
@@ -99,6 +100,7 @@ var contactForm = (function (window, document, undefined) {
     $(successContent).on('click', refreshMe, function () {
       successContent.addClass('is-hidden');
       form.removeClass('is-hidden');
+      $('.invite-to-contact').removeClass('is-hidden');
       $('.contact-name-field').val('');
       $('.contact-email-field').val('');
       $('.message-field').val('');
