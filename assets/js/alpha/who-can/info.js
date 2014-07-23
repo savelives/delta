@@ -22,12 +22,17 @@ var info = (function (window, document, undefined) {
   };
 
   info.carrouselInfo = function () {
-    $('.np-arrow').on('click', function () {
-      var arrPrev = $('.np-arrow-prev'),
-        arrNext = $('.np-arrow-next');
+    var arrPrev = $('.np-arrow-prev'),
+      arrNext = $('.np-arrow-next');
 
-      $('.wm-info:visible').hide().siblings('.wm-info').show().addClass('animated flipInX');
+    arrPrev.on('click', function () {
+      $('.wm-info:visible').hide().siblings('.wm-info').show().removeClass('fadeInLeft').addClass('animated fadeInRight');
     });
+
+    arrNext.on('click', function () {
+      $('.wm-info:visible').hide().siblings('.wm-info').show().removeClass('fadeInRight').addClass('animated fadeInLeft');
+    });
+
   };
 
   return info.init();
