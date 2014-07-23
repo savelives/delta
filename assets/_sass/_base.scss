@@ -110,6 +110,18 @@ label.error {
   float: left;
 }
 
+.toggle-menu {
+  @include media($desktop) {
+    display: none;
+  }
+  text-transform: uppercase;
+  color: $awhite;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
 .main-menu {
   @include media($desktop) {
     position: relative;
@@ -121,8 +133,14 @@ label.error {
   }
   @include media($tablet) {
     position: absolute;
-    top: 0;
-    right: -70%;
+    top: 64px;
+    text-align: center;
+    background: $ablue;
+    left: 0;
+    right: 0;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid $awhite;
+    display: none;
   }
   li {
     margin-top: 15px;
@@ -134,6 +152,9 @@ label.error {
         color: $agreen;
         transition: all .2s ease-in-out;
       }
+    }
+    @include media($tablet) {
+      font-size: rem(24);
     }
   }
 }

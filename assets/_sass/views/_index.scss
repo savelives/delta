@@ -42,6 +42,15 @@
   margin-bottom: 20px;
 }
 
+.name-field,
+.email-field,
+.contact-name-field,
+.contact-email-field {
+  @include media($mobile) {
+    height: 45px;
+  }
+}
+
 .big-title {
   display: block;
   font-size: rem(40);

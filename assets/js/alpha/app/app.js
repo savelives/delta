@@ -12,6 +12,7 @@ var app = (function (window, document, undefined) {
   app.init = function () {
     this.smothScroll();
     this.backToTop();
+    this.toggleMenu();
   };
 
   // SmothScroll
@@ -37,6 +38,12 @@ var app = (function (window, document, undefined) {
         scrollTop: 0
       }, 1000);
     });
+  };
+
+  app.toggleMenu = function () {
+    $('.toggle-menu').on('click', function () {
+      $('.main-menu').slideToggle('slow');
+    })
   };
 
   return app.init();
