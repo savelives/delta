@@ -568,7 +568,16 @@
     }
   }
   .arrow-down {
-    top: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+  }
+  @include media($desktop) {
+    height: 680px;
+    .wrap {
+      margin-top: 120px;
+    }
   }
 }
 
