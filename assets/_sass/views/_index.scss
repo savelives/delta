@@ -177,17 +177,7 @@
 \*------------------------------------*/
 
 .center-middle {
-  @include media($desktop) {
-    position: absolute;
-    width: 960px;
-    max-width: 100%;
-    top: 56%;
-    left: 50%;
-    @include transform(translate(-50%, -50%));
-  }
-  @include media($mobile) {
-    padding: 20px;
-  }
+
 }
 
 .home-part {
