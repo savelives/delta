@@ -132,7 +132,7 @@ label.error {
       font-weight: 300;
       &:hover {
         color: $agreen;
-        @include transition(all 5s $ease-in-circ);
+        transition: all .2s ease-in-out;
       }
     }
   }
