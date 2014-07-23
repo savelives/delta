@@ -19,7 +19,7 @@ var tabs = (function (window, document, undefined) {
       e.preventDefault();
       $(this).addClass('tab-current').siblings().removeClass('tab-current');
       tabsContent.removeClass('tab-content-current');
-      $(tabsContent[$(this).data('index') - 1]).addClass('tab-content-current animated pulse');
+      $(tabsContent[$(this).data('index') - 1]).addClass('tab-content-current animated fadeIn');
     });
   };
 
