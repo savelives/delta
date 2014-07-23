@@ -23,6 +23,9 @@ var info = (function (window, document, undefined) {
 
   info.carrouselInfo = function () {
     $('.np-arrow').on('click', function () {
+      var arrPrev = $('.np-arrow-prev'),
+        arrNext = $('.np-arrow-next');
+
       $('.wm-info:visible').hide().siblings('.wm-info').show().addClass('animated flipInX');
     });
   };
