@@ -253,7 +253,9 @@
 }
 
 .disclaimer-info {
-  margin-top: 80px;
+  position: relative;
+  top: 30px;
+  padding-top: 80px;
   display: block;
   color: $awhite;
   font-size: rem(14);
