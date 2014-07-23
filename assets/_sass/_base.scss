@@ -166,6 +166,12 @@ label.error {
   position: relative;
   background: $awhite;
   padding: 40px 0;
+  @include media($desktop) {
+    height: 680px;
+    .wrap {
+      margin-top: 100px;
+    }
+  }
 }
 
 .supporting {
@@ -174,6 +180,7 @@ label.error {
 
 .supporting-title {
   color: $ablue;
+  margin-bottom: 60px;
 }
 
 .supporting-list {
@@ -202,6 +209,10 @@ label.error {
 }
 
 .other-infos {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
   text-align: center;
   a {
     color: $ablack;
