@@ -230,8 +230,8 @@
   position: relative;
   top: 20px;
   @include media($mobile) {
-    display: none !important;
-    visibility: hidden;
+    @include span-columns(4);
+    top: 0;
   }
 }
 
