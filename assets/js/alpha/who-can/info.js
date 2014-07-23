@@ -26,11 +26,11 @@ var info = (function (window, document, undefined) {
       arrNext = $('.np-arrow-next');
 
     arrPrev.on('click', function () {
-      $('.wm-info:visible').hide().siblings('.wm-info').show().removeClass('fadeInLeft').addClass('animated fadeInRight');
+      $('.wm-info:visible').hide().siblings('.wm-info').show().removeClass('fadeInLeft').addClass('animated zoomIn');
     });
 
     arrNext.on('click', function () {
-      $('.wm-info:visible').hide().siblings('.wm-info').show().removeClass('fadeInRight').addClass('animated fadeInLeft');
+      $('.wm-info:visible').hide().siblings('.wm-info').show().removeClass('fadeInRight').addClass('animated zoomIn');
     });
 
   };
