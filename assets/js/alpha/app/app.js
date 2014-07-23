@@ -13,7 +13,6 @@ var app = (function (window, document, undefined) {
     this.smothScroll();
     this.backToTop();
     this.toggleMenu();
-    this.menuItemActive();
   };
 
   // SmothScroll
@@ -45,12 +44,6 @@ var app = (function (window, document, undefined) {
     $('.toggle-menu').on('click', function () {
       $('.main-menu').slideToggle('slow');
     })
-  };
-
-  app.menuItemActive = function () {
-    $('.main-menu a').on('click', function () {
-      $(this).parent().addClass("active").siblings().removeClass("active");
-    });
   };
 
   return app.init();
