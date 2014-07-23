@@ -181,7 +181,7 @@
     position: absolute;
     width: 960px;
     max-width: 100%;
-    top: 50%;
+    top: 56%;
     left: 50%;
     @include transform(translate(-50%, -50%));
   }
@@ -198,7 +198,6 @@
     margin-top: 60px;
   }
   padding-top: 70px;
-  padding-bottom: 30px;
   z-index: 1;
   overflow: hidden;
   width: 100%;
@@ -214,7 +213,7 @@
     text-align: center;
   }
   .arrow-down {
-    top: 180px;
+    margin-top: 10px;
   }
 }
 
