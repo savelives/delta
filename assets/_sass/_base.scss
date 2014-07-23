@@ -203,6 +203,13 @@ label.error {
 
 .other-infos {
   float: right;
+  a {
+    color: $ablack;
+    &:hover {
+      color: $text-gb;
+      transition: all .2s ease-in-out;
+    }
+  }
 }
 
 .other-infos-list {
