@@ -11,11 +11,12 @@ var app = (function (window, document, undefined) {
 
   app.init = function () {
     this.smothScroll();
+    this.backToTop();
   };
 
   // SmothScroll
   app.smothScroll = function () {
-    $('a[href*=#]:not([href=#])').click(function () {
+    $('.main-menu a').click(function () {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -26,6 +27,15 @@ var app = (function (window, document, undefined) {
           return false
         }
       }
+    });
+  };
+
+  app.backToTop = function () {
+    $('.logo-link').on('click', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000);
     });
   };
 
