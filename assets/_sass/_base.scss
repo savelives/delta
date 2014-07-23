@@ -126,6 +126,7 @@ label.error {
   @include media($desktop) {
     position: relative;
     float: right;
+    display: inline-block !important;
     li {
       display: inline-block;
       margin-left: 20px;
