@@ -228,6 +228,10 @@
   @include span-columns(4);
   position: relative;
   top: 20px;
+  @include media($mobile) {
+    display: none !important;
+    visibility: hidden;
+  }
 }
 
 .contact-success,
