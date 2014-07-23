@@ -300,11 +300,7 @@
     text-transform: uppercase;
     &:hover {
       color: $aagreen;
-      -webkit-transition: all .3ms ease-in-out;
-      -moz-transition: all .3ms ease-in-out;
-      -ms-transition: all .3ms ease-in-out;
-      -o-transition: all .3ms ease-in-out;
-      transition: all .3ms ease-in-out;
+      transition: all .2s ease-in-out;
     }
     &:before {
       display: inline-block;
