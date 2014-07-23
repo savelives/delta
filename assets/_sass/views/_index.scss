@@ -176,6 +176,7 @@
 }
 
 .home-part {
+  position: relative;
   padding: 70px 0 0 0;
   .wrap {
     margin-top: 80px;
@@ -189,7 +190,10 @@
     text-align: center;
   }
   .arrow-down {
-    top: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
   }
   @include media($desktop) {
     height: 100%;
@@ -254,9 +258,10 @@
 }
 
 .disclaimer-info {
-  position: relative;
-  top: 30px;
-  padding-top: 80px;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  left: 0;
   display: block;
   color: $awhite;
   font-size: rem(14);
