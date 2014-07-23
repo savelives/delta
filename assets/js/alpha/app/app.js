@@ -16,7 +16,7 @@ var app = (function (window, document, undefined) {
 
   // SmothScroll
   app.smothScroll = function () {
-    $('.main-menu a').click(function () {
+    $('.smoth-link').click(function () {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
