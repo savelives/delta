@@ -339,11 +339,17 @@
   background: url('../../img/img-sprites.png') no-repeat -246px -12px;
   width: 21px;
   height: 10px;
-  &.active {
-    background: url('../../img/img-sprites.png') no-repeat -216px -12px;
-    width: 21px;
-    height: 10px;
-  }
+}
+
+.arrow-big-title-active {
+  position: absolute;
+  right: 20px;
+  margin-top: 5px;
+  content: "";
+  display: inline-block;
+  background: url('../../img/img-sprites.png') no-repeat -216px -12px;
+  width: 21px;
+  height: 10px;
 }
 
 .arrow-medium-title {

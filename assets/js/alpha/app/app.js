@@ -13,6 +13,7 @@ var app = (function (window, document, undefined) {
     this.smothScroll();
     this.backToTop();
     this.toggleMenu();
+    this.polymerBigArrow();
   };
 
   // SmothScroll
@@ -44,6 +45,15 @@ var app = (function (window, document, undefined) {
     $('.toggle-menu').on('click', function () {
       $('.main-menu').slideToggle('slow');
     })
+  };
+
+  app.polymerBigArrow = function () {
+    var mainHeader = $('.polymer-main-title');
+    mainHeader.on('click', function () {
+
+      mainHeader.find('.arrow-big-title').toggleClass('arrow-big-title-active');
+
+    });
   };
 
   return app.init();
