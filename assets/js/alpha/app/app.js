@@ -14,6 +14,7 @@ var app = (function (window, document, undefined) {
     this.backToTop();
     this.toggleMenu();
     this.polymerBigArrow();
+    this.polymerMediumArrow();
   };
 
   // SmothScroll
@@ -48,11 +49,22 @@ var app = (function (window, document, undefined) {
   };
 
   app.polymerBigArrow = function () {
-    var mainHeader = $('.polymer-main-title');
+    var mainHeader = $('.polymer-wc-title');
     mainHeader.each(function (i) {
 
       $(this).on('click', function (i) {
         $(this).find('.arrow-big-title').toggleClass('arrow-big-title-active')[i];
+      });
+
+    });
+  };
+
+  app.polymerMediumArrow = function () {
+    var subHeader = $('.polymer-sub-header');
+    subHeader.each(function (i) {
+
+      $(this).on('click', function (i) {
+        $(this).find('.arrow-medium-title').toggleClass('arrow-medium-title-active')[i];
       });
 
     });
