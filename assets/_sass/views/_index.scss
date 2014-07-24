@@ -282,6 +282,7 @@
 \*------------------------------------*/
 
 .accordion-info {
+  position: relative;
   font-weight: 300;
   @include media($desktop) {
     position: absolute;
@@ -328,6 +329,23 @@
 .polymer-wcant-content {
   border-bottom: 1px solid $aagreen;
 }
+
+.arrow-big-title {
+  position: absolute;
+  right: 20px;
+  margin-top: 5px;
+  content: "";
+  display: inline-block;
+  background: url('../../img/img-sprites.png') no-repeat -246px -12px;
+  width: 21px;
+  height: 10px;
+  &.active {
+    background: url('../../img/img-sprites.png') no-repeat -216px -12px;
+    width: 21px;
+    height: 10px;
+  }
+}
+
 
 .mini-symbol-check {
   content: "";
