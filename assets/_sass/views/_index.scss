@@ -302,11 +302,22 @@
   font-weight: 300;
   text-transform: uppercase;
   padding: 20px;
+  &:first-of-type {
+    border-bottom: 1px solid $awhite;
+  }
 }
 
 .polymer-wc-content {
-  padding: 20px 20px;
-  border: 1px solid $aagreen;
+  border-right: 1px solid $aagreen;
+  border-left: 1px solid $aagreen;
+}
+
+.polymer-wcan-content {
+  border-bottom: 1px solid $awhite;
+}
+
+.polymer-wcant-content {
+  border-bottom: 1px solid $aagreen;
 }
 
 .who-can {
