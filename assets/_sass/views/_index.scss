@@ -329,6 +329,26 @@
   border-bottom: 1px solid $aagreen;
 }
 
+.mini-symbol-check {
+  content: "";
+  display: inline-block;
+  background: url('../../img/img-sprites.png') no-repeat;
+  vertical-align: middle;
+  margin: 0 20px 2px 0;
+}
+
+.mini-symbol-check-positive {
+  background-position: -216px -60px;
+  width: 22px;
+  height: 22px;
+}
+
+.mini-symbol-check-negative {
+  background-position: -252px -60px;
+  width: 22px;
+  height: 22px;
+}
+
 .who-can {
   position: relative;
   background: $awhite;
