@@ -293,6 +293,12 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  @include media($tablet) {
+    position: absolute;
+    left: -9999px;
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .can-cant {
