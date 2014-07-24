@@ -301,6 +301,15 @@
   }
 }
 
+.accordion-info {
+  @include media($desktop) {
+    position: absolute;
+    left: -9999px;
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .can-cant {
   text-align: center;
   a {
