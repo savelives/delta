@@ -363,6 +363,17 @@
   height: 6px;
 }
 
+.arrow-medium-title-active {
+  position: absolute;
+  right: 25px;
+  margin-top: 10px;
+  content: "";
+  display: inline-block;
+  background: url('../../img/img-sprites.png') no-repeat -247px -40px;
+  width: 13px;
+  height: 6px;
+}
+
 .mini-symbol-check {
   content: "";
   display: inline-block;
