@@ -282,7 +282,6 @@
 \*------------------------------------*/
 
 .accordion-info {
-  text-transform: uppercase;
   font-weight: 300;
   @include media($desktop) {
     position: absolute;
@@ -294,6 +293,7 @@
 
 .polymer-ui-collapsible-header {
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .polymer-wc-title {
