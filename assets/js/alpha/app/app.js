@@ -49,9 +49,11 @@ var app = (function (window, document, undefined) {
 
   app.polymerBigArrow = function () {
     var mainHeader = $('.polymer-main-title');
-    mainHeader.on('click', function () {
+    mainHeader.each(function (i) {
 
-      mainHeader.find('.arrow-big-title').toggleClass('arrow-big-title-active');
+      $(this).on('click', function (i) {
+        mainHeader.find('.arrow-big-title').toggleClass('arrow-big-title-active');
+      });
 
     });
   };
