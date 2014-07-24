@@ -52,7 +52,7 @@ var app = (function (window, document, undefined) {
     mainHeader.each(function (i) {
 
       $(this).on('click', function (i) {
-        mainHeader.find('.arrow-big-title').toggleClass('arrow-big-title-active');
+        $(this).find('.arrow-big-title').toggleClass('arrow-big-title-active')[i];
       });
 
     });
