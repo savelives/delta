@@ -280,6 +280,35 @@
 /*------------------------------------*\
   Who can
 \*------------------------------------*/
+
+.accordion-info {
+  text-transform: uppercase;
+  @include media($desktop) {
+    position: absolute;
+    left: -9999px;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.polymer-ui-collapsible-header {
+  cursor: pointer;
+}
+
+.polymer-wc-title {
+  background: $aagreen;
+  color: $awhite;
+  font-size: rem(20);
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.polymer-wc-content {
+  padding: 20px 20px;
+  border: 1px solid $aagreen;
+}
+
 .who-can {
   position: relative;
   background: $awhite;
@@ -294,15 +323,6 @@
   width: 100%;
   overflow: hidden;
   @include media($tablet) {
-    position: absolute;
-    left: -9999px;
-    display: none;
-    visibility: hidden;
-  }
-}
-
-.accordion-info {
-  @include media($desktop) {
     position: absolute;
     left: -9999px;
     display: none;
