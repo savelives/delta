@@ -426,15 +426,6 @@
   text-align: center;
   @extend .cf;
   li {
-    @include media($tablet) {
-      @include span-columns(2);
-      @include omega;
-    }
-    @include media($mobile) {
-      @include span-columns(2);
-      @include shift(1);
-      min-height: 120px;
-    }
     cursor: pointer;
     width: 170px;
     height: auto;
