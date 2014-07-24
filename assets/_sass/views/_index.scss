@@ -283,6 +283,7 @@
 
 .accordion-info {
   text-transform: uppercase;
+  font-weight: 300;
   @include media($desktop) {
     position: absolute;
     left: -9999px;
@@ -310,6 +311,14 @@
 .polymer-wc-content {
   border-right: 1px solid $aagreen;
   border-left: 1px solid $aagreen;
+  polymer-ui-collapsible {
+    color: $greygreen;
+    border-bottom: 1px solid $aagreen;
+    padding: 20px;
+    &:last-of-type {
+      border: 0;
+    }
+  }
 }
 
 .polymer-wcan-content {
