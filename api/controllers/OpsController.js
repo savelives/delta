@@ -26,7 +26,7 @@ module.exports = {
    index: function (req, res) {
 
     return res.view({
-      layout: "ops/index"
+      _layoutFile: "../opslayout"
     });
   },
 
