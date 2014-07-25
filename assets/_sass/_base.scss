@@ -87,6 +87,22 @@ label.error {
   }
 }
 
+::-webkit-input-placeholder {
+   color: $aagreen;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $aagreen;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $aagreen;
+}
+
+:-ms-input-placeholder {
+   color: $aagreen;
+}
+
   @-webkit-keyframes pulsate {
     to {
       -webkit-transform: scale(1.4);
