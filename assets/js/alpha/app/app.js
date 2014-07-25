@@ -55,7 +55,7 @@ var app = (function (window, document, undefined) {
   };
 
   app.toggleMenu = function () {
-    $('.menu-button').on('click', function () {
+    $('.main-header').on('click', '.menu-button', function () {
       $('.main-menu').slideToggle('slow');
     })
   };
@@ -65,6 +65,12 @@ var app = (function (window, document, undefined) {
     mainHeader.each(function (i) {
 
       $(this).on('click', function (i) {
+
+        // if ($(this).parent().attr('active') == "") {
+        //   console.log('Yo ');
+        //   $(this).parent().siblings().find('.arrow-big-title').removeClass('arrow-big-title-active');
+        // }
+
         $(this).find('.arrow-big-title').toggleClass('arrow-big-title-active')[i];
       });
 
