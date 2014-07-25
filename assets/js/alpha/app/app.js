@@ -48,6 +48,10 @@ var app = (function (window, document, undefined) {
     $('.main-menu a').on('click', function () {
       $(this).parent().addClass("active").siblings().removeClass("active");
     });
+
+    $('.smoth-link').on('click', function () {
+      console.log($(this).attr('href'));
+    });
   };
 
   app.toggleMenu = function () {

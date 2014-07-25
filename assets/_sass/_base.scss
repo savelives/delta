@@ -146,8 +146,12 @@ label.error {
   color: $awhite;
   cursor: pointer;
   position: absolute;
-  top: 25px;
+  top: 20px;
   right: 20px;
+  background: url('../../img/menu.png') no-repeat;
+  display: inline-block;
+  width: 35px;
+  height: 28px;
 }
 
 .main-menu {
