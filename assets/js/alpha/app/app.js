@@ -15,6 +15,7 @@ var app = (function (window, document, undefined) {
     this.toggleMenu();
     this.polymerBigArrow();
     this.polymerMediumArrow();
+    this.isThePageVisible();
   };
 
   // SmothScroll
@@ -67,6 +68,13 @@ var app = (function (window, document, undefined) {
         $(this).find('.arrow-medium-title').toggleClass('arrow-medium-title-active')[i];
       });
 
+    });
+  };
+
+  app.isThePageVisible = function () {
+    var page = $('#o-projeto .wrap');
+    $(window).scroll(function () {
+      console.log(page.visible());
     });
   };
 
