@@ -131,6 +131,9 @@ label.error {
   @include media($tablet) {
     display: inline-block;
   }
+  @include media($mobile) {
+    margin-top: 15px;
+  }
 }
 
 .logo-link {
