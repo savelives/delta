@@ -55,7 +55,7 @@ var app = (function (window, document, undefined) {
   };
 
   app.toggleMenu = function () {
-    $('.toggle-menu').on('click', function () {
+    $('.menu-button').on('click', function () {
       $('.main-menu').slideToggle('slow');
     })
   };
