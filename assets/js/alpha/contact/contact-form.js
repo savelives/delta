@@ -33,6 +33,18 @@ var contactForm = (function (window, document, undefined) {
         "message": message
       };
 
+      if (name == false) {
+        $('.contact-name-field').addClass('animated shake');
+      }
+
+      if (email == false) {
+        $('.contact-email-field').addClass('animated shake');
+      }
+
+      if (message == false) {
+        $('.message-field').addClass('animated shake');
+      }
+
       var contactAjax = $.ajax({
         type: 'POST',
         url: 'home/contact',
