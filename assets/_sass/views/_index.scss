@@ -229,9 +229,9 @@
   @include span-columns(4);
   position: relative;
   top: 20px;
-  @include media($mobile) {
-    @include span-columns(4);
-    top: 0;
+  @include media($tablet) {
+    display: none !important;
+    visibility: hidden;
   }
 }
 

@@ -111,6 +111,35 @@ label.error {
   background: $ablack;
   color: $awhite;
 }
+  /* By Zeno Rocha */
+  @-webkit-keyframes dropin {
+    from  { margin-top: -800px; }
+    90%   { margin-top: 10px; }
+    to    { margin-top: 0; }
+  }
+  @-moz-keyframes dropin {
+    from  { margin-top: -800px; }
+    90%   { margin-top: 10px; }
+    to    { margin-top: 0; }
+  }
+  @keyframes dropin {
+    from  { margin-top: -800px; }
+    90%   { margin-top: 10px; }
+    to    { margin-top: 0; }
+  }
+
+  @-webkit-keyframes slidein {
+    from  { margin-left: -800px; }
+    to    { margin-left: 0; }
+  }
+  @-moz-keyframes slidein {
+    from  { margin-left: -800px; }
+    to    { margin-left: 0; }
+  }
+  @keyframes slidein {
+    from  { margin-left: -800px; }
+    to    { margin-left: 0; }
+  }
 
   @-webkit-keyframes pulsate {
     to {
@@ -180,6 +209,18 @@ label.error {
   display: inline-block;
   width: 35px;
   height: 28px;
+  -webkit-animation-name: dropin;
+  -webkit-animation-duration: 1.8s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: dropin;
+  -moz-animation-duration: 1.8s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  animation-name: dropin;
+  animation-duration: 1.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 
 .main-menu {
