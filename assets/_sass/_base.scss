@@ -103,6 +103,15 @@ label.error {
    color: $aagreen;
 }
 
+::-moz-selection {
+  background: $ablack;
+  color: $awhite;
+}
+::selection {
+  background: $ablack;
+  color: $awhite;
+}
+
   @-webkit-keyframes pulsate {
     to {
       -webkit-transform: scale(1.4);
