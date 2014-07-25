@@ -119,7 +119,7 @@ label.error {
   right: 0;
   left: 0;
   height: 65px;
-  // border-bottom: 1px solid $awhite;
+  border-bottom: 1px solid $menuborder;
   z-index: 9999;
   a {
     color: $awhite;
@@ -155,6 +155,21 @@ label.error {
 }
 
 .main-menu {
+  li {
+    margin: 15px 0 0 0;
+    font-size: rem(16);
+    text-transform: uppercase;
+    a {
+      font-weight: 300;
+      &:hover {
+        color: $agreen;
+        transition: all .2s ease-in-out;
+      }
+    }
+    @include media($tablet) {
+      font-size: rem(24);
+    }
+  }
   @include media($desktop) {
     position: relative;
     float: right;
@@ -167,27 +182,15 @@ label.error {
   @include media($tablet) {
     position: absolute;
     top: 64px;
-    text-align: center;
+    text-align: right;
     background: $ablue;
     left: 0;
     right: 0;
-    padding: 0 0 30px 0;
-    border-bottom: 1px solid $awhite;
     display: none;
-  }
-  li {
-    margin-top: 15px;
-    font-size: rem(16);
-    text-transform: uppercase;
-    a {
-      font-weight: 300;
-      &:hover {
-        color: $agreen;
-        transition: all .2s ease-in-out;
-      }
-    }
-    @include media($tablet) {
-      font-size: rem(24);
+    li {
+      margin: 0 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid $menuborder;
     }
   }
 }
