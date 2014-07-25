@@ -15,7 +15,7 @@ var app = (function (window, document, undefined) {
     this.toggleMenu();
     this.polymerBigArrow();
     this.polymerMediumArrow();
-    this.isThePageVisible();
+    this.menuItemActive();
   };
 
   // SmothScroll
@@ -40,6 +40,13 @@ var app = (function (window, document, undefined) {
       $('html, body').animate({
         scrollTop: 0
       }, 1000);
+      $('.main-menu li').removeClass('active');
+    });
+  };
+
+  app.menuItemActive = function () {
+    $('.main-menu a').on('click', function () {
+      $(this).parent().addClass("active").siblings().removeClass("active");
     });
   };
 
@@ -72,10 +79,7 @@ var app = (function (window, document, undefined) {
   };
 
   app.isThePageVisible = function () {
-    var page = $('#o-projeto .wrap');
-    $(window).scroll(function () {
-      console.log(page.visible());
-    });
+
   };
 
   return app.init();
