@@ -225,6 +225,7 @@ module.exports = function (grunt) {
             'assets/bower/jquery/dist/jquery.js',
             'assets/bower/jquery-validation/dist/jquery.validate.js',
             'assets/bower/nprogress/nprogress.js',
+            'assets/bower/scrollNav/dist/jquery.scrollNav.js',
             'assets/js/vendor/**/*.js',
             'assets/js/alpha/**/*.js'
             ]
