@@ -293,11 +293,15 @@
 }
 
 .polymer-ui-collapsible-header {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
   cursor: pointer;
   text-transform: uppercase;
 }
 
 .polymer-wc-title {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
   background: $aagreen;
   color: $awhite;
   font-size: rem(20);
@@ -310,6 +314,8 @@
 }
 
 .polymer-wc-content {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
   border-right: 1px solid $aagreen;
   border-left: 1px solid $aagreen;
   polymer-ui-collapsible {
@@ -605,6 +611,8 @@
 }
 
 .np-arrow {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
   position: absolute;
   top: 91px;
   background: url('../../img/img-sprites.png') no-repeat;

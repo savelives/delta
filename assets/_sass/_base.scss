@@ -199,6 +199,8 @@ label.error {
   @include media($desktop) {
     display: none;
   }
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
   display: inline-block;
   vertical-align: middle;
   zoom: 1;
