@@ -10,29 +10,11 @@ var app = (function (window, document, undefined) {
   var app = {};
 
   app.init = function () {
-    this.smothScroll();
     this.backToTop();
     this.toggleMenu();
     this.polymerBigArrow();
     this.polymerMediumArrow();
-    this.menuItemActive();
     this.scrollActiveMenu();
-  };
-
-  // SmothScroll
-  app.smothScroll = function () {
-    $('.smoth-link').click(function () {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top - 20
-          }, 800);
-          return false
-        }
-      }
-    });
   };
 
   app.backToTop = function () {
@@ -42,16 +24,6 @@ var app = (function (window, document, undefined) {
         scrollTop: 0
       }, 1000);
       $('.main-menu li').removeClass('active');
-    });
-  };
-
-  app.menuItemActive = function () {
-    $('.main-menu a').on('click', function () {
-      $(this).parent().addClass("active").siblings().removeClass("active");
-    });
-
-    $('.smoth-link').on('click', function () {
-      console.log($(this).attr('href'));
     });
   };
 
@@ -97,6 +69,7 @@ var app = (function (window, document, undefined) {
       sectionElem: 'section',
       showTopLink: false,
       className: 'main-menu',
+      speed: 700,
       insertTarget: '.main-header .wrap',
       insertLocation: 'appendTo',
       fixedMargin: 0,
