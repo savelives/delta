@@ -1,6 +1,18 @@
 /*------------------------------------*\
   Miscellaneous
 \*------------------------------------*/
+.page-name {
+  display: none;
+  visibility: hidden;
+}
+
+.scroll-nav {
+  position: fixed;
+  z-index: 123123123;
+  top: 300px;
+  background: black;
+}
+
 .home-part,
 .get-in-touch {
   background: $ablue;
@@ -484,7 +496,7 @@
 
 .tabs-content {
   padding-top: 80px;
-  section {
+  .c-ct-d {
     @extend .is-hidden;
   }
 }

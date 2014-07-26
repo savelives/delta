@@ -16,6 +16,7 @@ var app = (function (window, document, undefined) {
     this.polymerBigArrow();
     this.polymerMediumArrow();
     this.menuItemActive();
+    this.scrollActiveMenu();
   };
 
   // SmothScroll
@@ -88,8 +89,18 @@ var app = (function (window, document, undefined) {
     });
   };
 
-  app.isThePageVisible = function () {
-
+  app.scrollActiveMenu = function () {
+    $('.sierra-container').scrollNav({
+      sections: '.page-name',
+      subSections: false,
+      showHeadline: false,
+      sectionElem: 'section',
+      showTopLink: false,
+      insertTarget: '.main-header .wrap',
+      insertLocation: 'appendTo',
+      fixedMargin: 80,
+      scrollOffset: 140,
+    });
   };
 
   return app.init();
