@@ -96,9 +96,10 @@ var app = (function (window, document, undefined) {
       showHeadline: false,
       sectionElem: 'section',
       showTopLink: false,
+      className: 'main-menu',
       insertTarget: '.main-header .wrap',
       insertLocation: 'appendTo',
-      fixedMargin: 80,
+      fixedMargin: 0,
       scrollOffset: 140,
     });
   };

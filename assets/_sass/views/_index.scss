@@ -6,13 +6,6 @@
   visibility: hidden;
 }
 
-.scroll-nav {
-  position: fixed;
-  z-index: 123123123;
-  top: 300px;
-  background: black;
-}
-
 .home-part,
 .get-in-touch {
   background: $ablue;
@@ -239,12 +232,20 @@
 .contact-errors-container,
 .errors-container {
   @include span-columns(4);
-  position: relative;
-  top: 20px;
   @include media($tablet) {
     display: none !important;
     visibility: hidden;
   }
+}
+
+.errors-container {
+  position: relative;
+  top: 20px;
+}
+
+.contact-errors-container {
+  position: absolute;
+  bottom: 120px;
 }
 
 .contact-success,
