@@ -14,7 +14,7 @@ var tabs = (function (window, document, undefined) {
   };
 
   tabs.switchTabs = function () {
-    var tabsContent = $('.tabs-content section');
+    var tabsContent = $('.tabs-content .c-ct-d');
     $('.can-cant li').on('click', function (e) {
       e.preventDefault();
       $(this).addClass('tab-current').siblings().removeClass('tab-current');
