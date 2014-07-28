@@ -249,16 +249,25 @@
 
 .contact-success,
 .register-success {
+  text-align: center;
   span {
+    font-size: rem(28);
     color: $agreen;
   }
-  margin-top: 40px;
   p {
     font-size: rem(24);
     color: $awhite;
     text-decoration: underline;
     cursor: pointer;
   }
+}
+
+.register-success {
+  margin-top: 40px;
+}
+
+.contact-success {
+  margin-top: 180px;
 }
 
 .btn-register-now {
