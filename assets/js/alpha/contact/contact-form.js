@@ -79,8 +79,8 @@ var contactForm = (function (window, document, undefined) {
           required: '* Digite o seu nome.'
         },
         email: {
-          required: '* Digite o seu endereço de e-mail',
-          email: '* Digite um e-mail válido!'
+          required: '* Digite o seu endereço de e-mail.',
+          email: '* Digite um e-mail válido.'
         },
         message: {
           required: '* Digite a sua mensagem.'

@@ -63,9 +63,6 @@ var userForm = (function (window, document, undefined) {
 
   userForm.validate = function (form) {
 
-    // $('.btn-register-now').addClass('btn-disabled').attr('disabled', 'disabled');
-    // $('.btn-register-now').removeClass('btn-disabled').attr('disabled', false);
-
     form.validate({
       errorLabelContainer: $('.errors-container'),
       rules: {
@@ -82,8 +79,8 @@ var userForm = (function (window, document, undefined) {
           required: '* Digite o seu nome.'
         },
         email: {
-          required: '* Digite o seu endereço de e-mail',
-          email: '* Digite um e-mail válido!'
+          required: '* Digite o seu endereço de e-mail.',
+          email: '* Digite um e-mail válido.'
         }
       },
       success: function (element) {
