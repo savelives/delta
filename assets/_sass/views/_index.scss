@@ -528,11 +528,15 @@
     @extend .cf;
     &:hover {
       .symbol-check-positive {
+        position: relative;
+        top: -1px;
         background-position: -55px -46px;
         width: 47px;
         height: 47px;
       }
       .symbol-check-negative {
+        position: relative;
+        top: -1px;
         background-position: -159px -46px;
         width: 47px;
         height: 47px;
@@ -558,22 +562,12 @@
   background-position: -4px -48px;
   width: 45px;
   height: 45px;
-  // &:hover {
-  //   background-position: -55px -46px;
-  //   width: 47px;
-  //   height: 47px;
-  // }
 }
 
 .symbol-check-negative {
   background-position: -108px -47px;
   width: 45px;
   height: 45px;
-  &:hover {
-    // background-position: -159px -46px;
-    // width: 47px;
-    // height: 47px;
-  }
 }
 
 .wc-info {
