@@ -42,6 +42,7 @@ var contactForm = (function (window, document, undefined) {
       });
 
       contactAjax.done(function (response) {
+        NProgress.done();
         $(form).addClass('is-hidden');
         $('.invite-to-contact').addClass('is-hidden');
         $('.contact-success').removeClass('is-hidden');

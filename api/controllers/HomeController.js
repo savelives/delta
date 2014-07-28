@@ -43,21 +43,23 @@ module.exports = {
       }
     });
 
-    var name = req.body.name,
-      email = req.body.email,
-      message = req.body.message;
-
-    if (!name) {
+    var params = req.params.all();
+    console.log(params);
+    if(!params.name){
       res.send(500);
-    };
+    }
 
-    if (!email) {
+    if(!params.email){
       res.send(500);
-    };
+    }
 
-    if (!message) {
+    if(!params.message){
       res.send(500);
-    };
+    }
+
+    var name = params.name,
+      email = params.email,
+      message = params.message;
 
     // TODO: Figure out why the heck I can't pass the sender information to email receiver
     var mailOptions = {
@@ -69,6 +71,7 @@ module.exports = {
 
     var isValidName = validator.isLength(name, 2);
     var isValidEmail = validator.isEmail(email);
+    var isValidMsg = validator.isLength(message, 1);
 
     smtpTrans.sendMail(mailOptions, function (err, response) {
 
@@ -81,10 +84,12 @@ module.exports = {
 
         return res.redirect('/home/index');
       } else {
-        if (isValidName && isValidEmail) {
+        if (isValidName && isValidEmail && isValidMsg) {
           res.json(response);
         }
       }
+
+      smtpTrans.close();
 
     });
 

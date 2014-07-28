@@ -243,8 +243,8 @@
 }
 
 .contact-errors-container {
-  position: absolute;
-  bottom: 120px;
+  position: relative;
+  bottom: 70px;
 }
 
 .contact-success,
@@ -745,6 +745,7 @@
   display: block;
   width: 100%;
   height: 250px;
+  resize: none;
 }
 
 .btn-send-message {
