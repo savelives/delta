@@ -47,6 +47,18 @@ module.exports = {
       email = req.body.email,
       message = req.body.message;
 
+    if (!name) {
+      res.send(500);
+    };
+
+    if (!email) {
+      res.send(500);
+    };
+
+    if (!message) {
+      res.send(500);
+    };
+
     // TODO: Figure out why the heck I can't pass the sender information to email receiver
     var mailOptions = {
       from: name + ' <' + email + '>',
