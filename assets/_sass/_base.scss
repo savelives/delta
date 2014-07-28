@@ -142,28 +142,6 @@ label.error {
     to    { margin-left: 0; }
   }
 
-  @-webkit-keyframes pulsate {
-    to {
-      -webkit-transform: scale(1.4);
-      transform: scale(1.4);
-    }
-  }
-
-  @-moz-keyframes pulsate {
-    to {
-      -moz-transform: scale(1.4);
-      transform: scale(1.4);
-    }
-  }
-
-  @keyframes pulsate {
-    to {
-      -webkit-transform: scale(1.4);
-      -moz-transform: scale(1.4);
-      transform: scale(1.4);
-    }
-  }
-
 /*------------------------------------*\
   Main Header
 \*------------------------------------*/
@@ -341,12 +319,6 @@ label.error {
       top: 0.2em;
       font-size: 1.4em;
       color: $ablack;
-      -webkit-transform: scale(0.9);
-      -moz-transform: scale(0.9);
-      transform: scale(0.9);
-      -webkit-animation: pulsate 0.5s infinite linear alternate-reverse;
-      -moz-animation: pulsate 0.5s infinite linear alternate-reverse;
-      animation: pulsate 0.5s infinite linear alternate-reverse;
     }
   }
   a {
