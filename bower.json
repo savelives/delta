@@ -25,9 +25,7 @@
     "lodash": "~2.4.1",
     "jquery-validation": "~1.13.0",
     "nprogress": "~0.1.6",
-    "love-heart": "~0.3.0",
     "polymer-ui-accordion": "Polymer/polymer-ui-accordion#~0.3.0",
-    "scrollNav": "~2.2.0",
     "ScrollIt": "*"
   }
 }
