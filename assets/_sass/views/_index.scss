@@ -73,8 +73,11 @@
 }
 
 .arrow-down {
-  position: relative;
-  margin: 20px auto 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  left: 0;
+  margin: auto;
   font-size: rem(18);
   text-align: center;
   text-transform: uppercase;
@@ -170,6 +173,8 @@
 }
 
 .sierra-container {
+  position: relative;
+  height: 100%;
 }
 
 /*------------------------------------*\
@@ -188,6 +193,9 @@
     @include media($desktop) {
       margin-top: 80px;
     }
+    @include media($large-desktop) {
+      margin-top: 160px;
+    }
     @extend .cf;
   }
   p {
@@ -196,15 +204,6 @@
     font-weight: 300;
     color: $awhite;
     text-align: center;
-  }
-  .arrow-down {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    left: 0;
-  }
-  @include media($desktop) {
-
   }
   @include media($tablet) {
     margin-top: 60px;
@@ -417,11 +416,9 @@
   position: relative;
   background: $awhite;
   padding: 70px 0 50px 0;
+  min-height: 100%;
   .wrap {
     padding-top: 20px;
-  }
-  .arrow-down {
-    top: 40px;
   }
 }
 
@@ -656,20 +653,14 @@
   position: relative;
   background: $aagreen;
   padding: 50px 0;
+  min-height: 100%;
   p {
     color: $awhite;
     font-size: rem(22);
     font-weight: 300;
     line-height: 30px;
   }
-  .arrow-down {
-    position: absolute;
-    right: 0;
-    bottom: 15px;
-    left: 0;
-  }
   @include media($desktop) {
-    height: 680px;
     .wrap {
       margin-top: 100px;
     }
@@ -693,6 +684,7 @@
   position: relative;
   background: $awhite;
   padding: 60px 0;
+  height: 100%;
   p {
     color: $text-gb;
     font-size: rem(22);
@@ -709,7 +701,6 @@
     left: 0;
   }
   @include media($desktop) {
-    height: 680px;
     .wrap {
       margin-top: 120px;
     }
@@ -736,14 +727,12 @@
 .get-in-touch {
   position: relative;
   padding: 90px 0;
+  min-height: 100%;
   p {
     font-size: rem(22);
     font-weight: 300;
     color: $awhite;
     text-align: center;
-  }
-  .arrow-down {
-    top: 80px;
   }
 }
 
