@@ -83,10 +83,8 @@ label.error {
 }
 
 .active {
-  a {
-    color: $agreen !important;
-    -webkit-text-stroke: 1px $agreen;
-  }
+  color: $agreen !important;
+  -webkit-text-stroke: 1px $agreen;
 }
 
 ::-webkit-input-placeholder {
@@ -265,8 +263,8 @@ label.error {
   position: relative;
   background: $awhite;
   padding: 40px 0;
+  height: 100%;
   @include media($desktop) {
-    height: 680px;
     .wrap {
       margin-top: 100px;
     }
@@ -328,6 +326,10 @@ label.error {
       color: $text-gb;
       transition: all .2s ease-in-out;
     }
+  }
+  @include media($mobile) {
+    bottom: 0;
+    top: 630px;
   }
 }
 
