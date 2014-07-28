@@ -31,14 +31,6 @@ var userForm = (function (window, document, undefined) {
         "email": email
       };
 
-      if (name == false) {
-        $('.name-field').addClass('animated shake');
-      }
-
-      if (email == false) {
-        $('.email-field').addClass('animated shake');
-      }
-
       // Ajax call
       var ajaxCall = $.ajax({
         type: 'POST',
