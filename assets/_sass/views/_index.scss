@@ -526,6 +526,18 @@
     float: left;
     margin: 10px 11px 10px 11px;
     @extend .cf;
+    &:hover {
+      .symbol-check-positive {
+        background-position: -55px -46px;
+        width: 47px;
+        height: 47px;
+      }
+      .symbol-check-negative {
+        background-position: -159px -46px;
+        width: 47px;
+        height: 47px;
+      }
+    }
   }
 }
 
@@ -546,11 +558,11 @@
   background-position: -4px -48px;
   width: 45px;
   height: 45px;
-  &:hover {
-    background-position: -55px -46px;
-    width: 47px;
-    height: 47px;
-  }
+  // &:hover {
+  //   background-position: -55px -46px;
+  //   width: 47px;
+  //   height: 47px;
+  // }
 }
 
 .symbol-check-negative {
@@ -558,9 +570,9 @@
   width: 45px;
   height: 45px;
   &:hover {
-    background-position: -159px -46px;
-    width: 47px;
-    height: 47px;
+    // background-position: -159px -46px;
+    // width: 47px;
+    // height: 47px;
   }
 }
 

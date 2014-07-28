@@ -11,7 +11,6 @@ var info = (function (window, document, undefined) {
 
   info.init = function () {
     this.hoverItems();
-    this.carrouselInfo();
   };
 
   info.hoverItems = function () {
@@ -19,20 +18,6 @@ var info = (function (window, document, undefined) {
       $(this).find('.nal-title').toggle();
       $(this).find('.wc-info').toggleClass('is-visible-inline-block');
     });
-  };
-
-  info.carrouselInfo = function () {
-    var arrPrev = $('.np-arrow-prev'),
-      arrNext = $('.np-arrow-next');
-
-    arrPrev.on('click', function () {
-      $('.wm-info:visible').hide().siblings('.wm-info').show().removeClass('fadeInLeft').addClass('animated flipInX');
-    });
-
-    arrNext.on('click', function () {
-      $('.wm-info:visible').hide().siblings('.wm-info').show().removeClass('fadeInRight').addClass('animated flipInX');
-    });
-
   };
 
   return info.init();
