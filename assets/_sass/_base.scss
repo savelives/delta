@@ -520,6 +520,9 @@ label.error {
       margin-top: 180px;
     }
   }
+  @include media($mobile) {
+    height: 550px;
+  }
 }
 
 .supporting {
@@ -599,7 +602,7 @@ label.error {
   }
   @include media($mobile) {
     bottom: 0;
-    top: 630px;
+    top: 590px;
   }
 }
 
