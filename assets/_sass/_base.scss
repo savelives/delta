@@ -267,10 +267,6 @@ label.error {
       display: inline;
       margin: 0 5px;
       padding: 15px 0;
-      // border-right: 1px solid $menuborder;
-      // &:first-of-type {
-      //   border-left: 1px solid $menuborder;
-      // }
       a {
         display: inline-block;
         vertical-align: middle;
@@ -399,12 +395,15 @@ label.error {
     }
   }
   @include media($mobile) {
-    height: 550px;
+    height: 100%;
   }
 }
 
 .supporting {
   margin-bottom: 120px;
+  @include media($mobile) {
+    margin-bottom: 0;
+  }
 }
 
 .supporting-title {
@@ -422,6 +421,9 @@ label.error {
     margin: 0 50px;
     @include media($mobile) {
       margin-bottom: 100px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -479,8 +481,7 @@ label.error {
     }
   }
   @include media($mobile) {
-    bottom: 0;
-    top: 590px;
+    bottom: 20px;
   }
 }
 
