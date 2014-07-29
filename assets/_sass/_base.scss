@@ -420,20 +420,26 @@ label.error {
     display: inline-block;
     margin: 0 50px;
     @include media($mobile) {
-      margin-bottom: 100px;
-      &:last-of-type {
-        margin-bottom: 0;
-      }
+      margin: 0 30px 0 30px;
+    }
+    @include media($iphone-4) {
+      margin: 0 20px 0 20px;
     }
   }
 }
 
 .logo-awlka {
   width: 110px;
+  @include media($mobile) {
+    width: 80px;
+  }
 }
 
 .logo-digitalocean {
   width: 136px;
+  @include media($mobile) {
+    width: 96px;
+  }
 }
 
 .logo-awlka,
