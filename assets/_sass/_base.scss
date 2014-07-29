@@ -396,6 +396,9 @@ label.error {
   }
   @include media($mobile) {
     height: 100%;
+    .wrap {
+      padding: 50px 20px 0 20px;
+    }
   }
 }
 
@@ -410,7 +413,7 @@ label.error {
   color: $ablue;
   margin-bottom: 160px;
   @include media($mobile) {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 
