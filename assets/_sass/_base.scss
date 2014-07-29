@@ -271,12 +271,10 @@ label.error {
       // &:first-of-type {
       //   border-left: 1px solid $menuborder;
       // }
-      // &:last-of-type {
-      //   border-right: 1px solid $menuborder;
-      // }
       a {
         display: inline-block;
         vertical-align: middle;
+        margin: 0 2px 0 4px;
       }
       span {
         display: none;
