@@ -171,47 +171,12 @@ label.error {
 .logo-link {
   font-size: rem(36);
   float: left;
-}
-
-.menu-button {
-  @include media($desktop) {
-    display: none;
+  @include media($iphone-5) {
+    font-size: rem(30);
   }
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
-  display: inline-block;
-  vertical-align: middle;
-  zoom: 1;
-  padding: 10px 0;
-  color: $awhite;
-  position: absolute;
-  top: 12px;
-  right: 20px;
-  -webkit-animation-name: dropin;
-  -webkit-animation-duration: 1.8s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-name: dropin;
-  -moz-animation-duration: 1.8s;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease-in-out;
-  animation-name: dropin;
-  animation-duration: 1.8s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-}
-
-.burger {
-  cursor: pointer;
-  display: inline-block;
-  vertical-align: top;
-  span {
-    width: 28px;
-    height: 5px;
-    border-radius: 1px;
-    display: block;
-    background: $awhite;
-    margin-bottom: 4px;
+  @include media($iphone-4) {
+    font-size: rem(28);
+    margin-top: 5px;
   }
 }
 
@@ -228,7 +193,7 @@ label.error {
       }
     }
     @include media($tablet) {
-      font-size: rem(24);
+      font-size: rem(18);
     }
   }
   @include media($desktop) {
@@ -242,16 +207,156 @@ label.error {
   }
   @include media($tablet) {
     position: absolute;
-    top: 64px;
-    text-align: right;
-    background: $ablue;
-    left: 0;
-    right: 0;
-    display: none;
+    right: 20px;
+    top: 13px;
+    .btn-who-can {
+      background: url(../../img/menu-icons/btn-who-can.png) center no-repeat;
+      background-size: 40px 40px;
+      width: 40px;
+      height: 40px;
+    }
+    .btn-important {
+      background: url(../../img/menu-icons/btn-important.png) center no-repeat;
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+    }
+    .btn-the-project {
+      background: url(../../img/menu-icons/btn-the-project.png) center no-repeat;
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+    }
+    .btn-contact {
+      background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+    }
+    .btn-supporting {
+      background: url(../../img/menu-icons/btn-supporting.png) center no-repeat;
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+    }
     li {
-      margin: 0 20px;
-      padding: 10px 0;
-      border-bottom: 1px solid $menuborder;
+      display: inline;
+      margin: 0 5px;
+      padding: 15px 0;
+      // border-right: 1px solid $menuborder;
+      // &:first-of-type {
+      //   border-left: 1px solid $menuborder;
+      // }
+      // &:last-of-type {
+      //   border-right: 1px solid $menuborder;
+      // }
+      a {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+  @include media($mobile) {
+    .btn-who-can {
+      background: url(../../img/menu-icons/btn-who-can.png) center no-repeat;
+      background-size: 30px 30px;
+      width: 30px;
+      height: 30px;
+    }
+    .btn-important {
+      background: url(../../img/menu-icons/btn-important.png) center no-repeat;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+    }
+    .btn-the-project {
+      background: url(../../img/menu-icons/btn-the-project.png) center no-repeat;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+    }
+    .btn-contact {
+      background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+    }
+    .btn-supporting {
+      background: url(../../img/menu-icons/btn-supporting.png) center no-repeat;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  @include media($iphone-5) {
+    position: absolute;
+    top: 20px;
+    .btn-who-can {
+      background: url(../../img/menu-icons/btn-who-can.png) center no-repeat;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+    }
+    .btn-important {
+      background: url(../../img/menu-icons/btn-important.png) center no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    .btn-the-project {
+      background: url(../../img/menu-icons/btn-the-project.png) center no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    .btn-contact {
+      background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    .btn-supporting {
+      background: url(../../img/menu-icons/btn-supporting.png) center no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @include media($iphone-4) {
+    position: absolute;
+    top: 20px;
+    .btn-who-can {
+      background: url(../../img/menu-icons/btn-who-can.png) center no-repeat;
+      background-size: 25px 25px;
+      width: 25px;
+      height: 25px;
+    }
+    .btn-important {
+      background: url(../../img/menu-icons/btn-important.png) center no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    .btn-the-project {
+      background: url(../../img/menu-icons/btn-the-project.png) center no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    .btn-contact {
+      background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    .btn-supporting {
+      background: url(../../img/menu-icons/btn-supporting.png) center no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
