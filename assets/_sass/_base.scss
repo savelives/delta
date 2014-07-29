@@ -81,6 +81,9 @@ label.error {
   font-weight: 300;
   line-height: 25px;
   display: block;
+  @include media($tablet) {
+    line-height: 15px;
+  }
 }
 
 .active {
@@ -353,7 +356,7 @@ label.error {
       width: 25px;
       height: 25px;
       &.active {
-        background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
+        background: url(../../img/menu-icons/btn-contact-hover.png) center no-repeat;
         background-size: 25px 25px;
         width: 25px;
         height: 25px;

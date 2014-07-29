@@ -240,20 +240,24 @@
 .contact-errors-container,
 .errors-container {
   @include span-columns(4);
-  @include media($tablet) {
-    display: none !important;
-    visibility: hidden;
-  }
 }
 
 .errors-container {
   position: relative;
   top: 20px;
+  @include media($tablet) {
+    top: 0;
+    width: 100%;
+  }
 }
 
 .contact-errors-container {
   position: relative;
   bottom: 70px;
+  @include media($tablet) {
+    bottom: 10px;
+    width: 100%;
+  }
 }
 
 .contact-success,
@@ -433,7 +437,7 @@
 .who-can {
   position: relative;
   background: $awhite;
-  padding: 70px 0 50px 0;
+  padding: 70px 0 0px 0;
   min-height: 100%;
   .wrap {
     padding-top: 20px;
@@ -694,7 +698,7 @@
   }
   @include media($desktop) {
     .wrap {
-      margin-top: 100px;
+      margin-top: 140px;
     }
   }
 }
@@ -734,7 +738,7 @@
   }
   @include media($desktop) {
     .wrap {
-      margin-top: 120px;
+      margin-top: 170px;
     }
   }
 }
@@ -758,7 +762,7 @@
 \*------------------------------------*/
 .get-in-touch {
   position: relative;
-  padding: 90px 0;
+  padding: 70px 0;
   min-height: 100%;
   p {
     font-size: rem(22);
