@@ -240,24 +240,20 @@
 .contact-errors-container,
 .errors-container {
   @include span-columns(4);
+  @include media($tablet) {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .errors-container {
   position: relative;
   top: 20px;
-  @include media($tablet) {
-    top: 0;
-    width: 100%;
-  }
 }
 
 .contact-errors-container {
   position: relative;
   bottom: 70px;
-  @include media($tablet) {
-    bottom: 10px;
-    width: 100%;
-  }
 }
 
 .contact-success,
