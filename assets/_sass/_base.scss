@@ -235,30 +235,60 @@ label.error {
       background-size: 40px 40px;
       width: 40px;
       height: 40px;
+      &.active {
+        background: url(../../img/menu-icons/btn-who-can-hover.png) center no-repeat;
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px;
+      }
     }
     .btn-important {
       background: url(../../img/menu-icons/btn-important.png) center no-repeat;
       background-size: 35px 35px;
       width: 35px;
       height: 35px;
+      &.active {
+        background: url(../../img/menu-icons/btn-important-hover.png) center no-repeat;
+        background-size: 35px 35px;
+        width: 35px;
+        height: 35px;
+      }
     }
     .btn-the-project {
       background: url(../../img/menu-icons/btn-the-project.png) center no-repeat;
       background-size: 35px 35px;
       width: 35px;
       height: 35px;
+      &.active {
+        background: url(../../img/menu-icons/btn-the-project-hover.png) center no-repeat;
+        background-size: 35px 35px;
+        width: 35px;
+        height: 35px;
+      }
     }
     .btn-contact {
       background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
       background-size: 35px 35px;
       width: 35px;
       height: 35px;
+      &.active {
+        background: url(../../img/menu-icons/btn-contact-hover.png) center no-repeat;
+        background-size: 35px 35px;
+        width: 35px;
+        height: 35px;
+      }
     }
     .btn-supporting {
       background: url(../../img/menu-icons/btn-supporting.png) center no-repeat;
       background-size: 35px 35px;
       width: 35px;
       height: 35px;
+      &.active {
+        background: url(../../img/menu-icons/btn-supporting-hover.png) center no-repeat;
+        background-size: 35px 35px;
+        width: 35px;
+        height: 35px;
+      }
     }
     li {
       display: inline;
@@ -286,30 +316,60 @@ label.error {
       background-size: 30px 30px;
       width: 30px;
       height: 30px;
+      &.active {
+        background: url(../../img/menu-icons/btn-who-can-hover.png) center no-repeat;
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+      }
     }
     .btn-important {
       background: url(../../img/menu-icons/btn-important.png) center no-repeat;
       background-size: 25px 25px;
       width: 25px;
       height: 25px;
+      &.active {
+        background: url(../../img/menu-icons/btn-important-hover.png) center no-repeat;
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
+      }
     }
     .btn-the-project {
       background: url(../../img/menu-icons/btn-the-project.png) center no-repeat;
       background-size: 25px 25px;
       width: 25px;
       height: 25px;
+      &.active {
+        background: url(../../img/menu-icons/btn-the-project-hover.png) center no-repeat;
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
+      }
     }
     .btn-contact {
       background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
       background-size: 25px 25px;
       width: 25px;
       height: 25px;
+      &.active {
+        background: url(../../img/menu-icons/btn-who-contact.png) center no-repeat;
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+      }
     }
     .btn-supporting {
       background: url(../../img/menu-icons/btn-supporting.png) center no-repeat;
       background-size: 25px 25px;
       width: 25px;
       height: 25px;
+      &.active {
+        background: url(../../img/menu-icons/btn-supporting-hover.png) center no-repeat;
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
+      }
     }
   }
   @include media($iphone-5) {
@@ -320,30 +380,60 @@ label.error {
       background-size: 25px 25px;
       width: 25px;
       height: 25px;
+      &.active {
+        background: url(../../img/menu-icons/btn-who-can-hover.png) center no-repeat;
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
+      }
     }
     .btn-important {
       background: url(../../img/menu-icons/btn-important.png) center no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      &.active {
+        background: url(../../img/menu-icons/btn-important-hover.png) center no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
     .btn-the-project {
       background: url(../../img/menu-icons/btn-the-project.png) center no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      &.active {
+        background: url(../../img/menu-icons/btn-the-project-hover.png) center no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
     .btn-contact {
       background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      &.active {
+        background: url(../../img/menu-icons/btn-contact-hover.png) center no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
     .btn-supporting {
       background: url(../../img/menu-icons/btn-supporting.png) center no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      &.active {
+        background: url(../../img/menu-icons/btn-supporting-hover.png) center no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
   @include media($iphone-4) {
@@ -354,30 +444,60 @@ label.error {
       background-size: 25px 25px;
       width: 25px;
       height: 25px;
+      &.active {
+        background: url(../../img/menu-icons/btn-who-can-hover.png) center no-repeat;
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
+      }
     }
     .btn-important {
       background: url(../../img/menu-icons/btn-important.png) center no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      &.active {
+        background: url(../../img/menu-icons/btn-important-hover.png) center no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
     .btn-the-project {
       background: url(../../img/menu-icons/btn-the-project.png) center no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      &.active {
+        background: url(../../img/menu-icons/btn-the-project-hover.png) center no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
     .btn-contact {
       background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      &.active {
+        background: url(../../img/menu-icons/btn-contact-hover.png) center no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
     .btn-supporting {
       background: url(../../img/menu-icons/btn-supporting.png) center no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      &.active {
+        background: url(../../img/menu-icons/btn-supporting-hover.png) center no-repeat;
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
