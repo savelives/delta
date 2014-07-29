@@ -5,6 +5,7 @@ html,
 body {
   height: 100%;
   font-size: 16px;
+  -webkit-overflow-scrolling: touch;
   @include media($tablet) {
     font-size: 14px;
   }
@@ -155,6 +156,16 @@ label.error {
   z-index: 9999;
   a {
     color: $awhite;
+  }
+}
+
+@include media($iphone-4) {
+  .main-header-iphone4 {
+    position: relative;
+    top: 0;
+  }
+  .home-part-iphone4 {
+    margin-top: 0 !important;
   }
 }
 
@@ -383,6 +394,9 @@ label.error {
 .supporting-title {
   color: $ablue;
   margin-bottom: 160px;
+  @include media($mobile) {
+    margin-bottom: 80px;
+  }
 }
 
 .supporting-list {
@@ -391,7 +405,7 @@ label.error {
     display: inline-block;
     margin: 0 50px;
     @include media($mobile) {
-      margin-bottom: 50px;
+      margin-bottom: 100px;
     }
   }
 }
