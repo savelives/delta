@@ -62,19 +62,6 @@ var app = (function (window, document, undefined) {
   };
 
   app.scrollActiveMenu = function () {
-    // $('.sierra-container').scrollNav({
-    //   sections: '.page-name',
-    //   subSections: false,
-    //   showHeadline: false,
-    //   sectionElem: 'section',
-    //   showTopLink: false,
-    //   className: 'main-menu',
-    //   speed: 700,
-    //   insertTarget: '.main-header .wrap',
-    //   insertLocation: 'appendTo',
-    //   fixedMargin: 20,
-    //   scrollOffset: 100,
-    // });
     $.scrollIt();
   };
 
