@@ -68,7 +68,8 @@
     line-height: 40px;
   }
   @include media($mobile) {
-    line-height: 40px;
+    font-size: rem(32);
+    line-height: 30px;
   }
 }
 
@@ -204,10 +205,18 @@
     font-weight: 300;
     color: $awhite;
     text-align: center;
+    @include media($mobile) {
+      font-size: rem(20);
+      line-height: 20px;
+    }
   }
   @include media($tablet) {
     margin-top: 60px;
     height: 800px;
+  }
+  @include media($mobile) {
+    margin-top: 50px;
+    height: 700px;
   }
 }
 
@@ -437,12 +446,6 @@
       padding-top: 0;
     }
   }
-  // @include media($iphone-4) {
-  //   min-height: 50% !important;
-  //   .wrap {
-  //     padding-top: 0;
-  //   }
-  // }
 }
 
 .tabs {
