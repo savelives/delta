@@ -104,12 +104,12 @@ label.error {
 }
 
 ::-moz-selection {
-  background: $ablack;
-  color: $awhite;
+  background: $awhite;
+  color: $ablack;
 }
 ::selection {
-  background: $ablack;
-  color: $awhite;
+  background: $awhite;
+  color: $ablack;
 }
   /* By Zeno Rocha */
   @-webkit-keyframes dropin {
