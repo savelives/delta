@@ -353,7 +353,7 @@ label.error {
       width: 25px;
       height: 25px;
       &.active {
-        background: url(../../img/menu-icons/btn-who-contact.png) center no-repeat;
+        background: url(../../img/menu-icons/btn-contact.png) center no-repeat;
         background-size: 25px 25px;
         width: 25px;
         height: 25px;
@@ -506,6 +506,7 @@ label.error {
   Main Footer
 \*------------------------------------*/
 .main-footer {
+  @extend .cf;
   position: relative;
   background: $awhite;
   padding: 40px 0;
@@ -554,22 +555,37 @@ label.error {
   vertical-align: middle;
 }
 
+.heart {
+  display: inline-block;
+  position: relative;
+  top: 0.2em;
+  font-size: 1.4em;
+  color: $ablack;
+  vertical-align: bottom;
+}
+
+.powered-by {
+  &:before {
+    content: "|";
+    display: inline-block;
+    margin: 0 4px 0 2px;
+    color: $ablack;
+    font-size: rem(15);
+  }
+  @include media($mobile) {
+    display: block;
+    &:before {
+      content: "";
+    }
+  }
+}
+
 .other-infos {
   position: absolute;
   right: 0;
   bottom: 20px;
   left: 0;
   text-align: center;
-  small {
-    span {
-      display: inline-block;
-      position: relative;
-      top: 0.2em;
-      font-size: 1.4em;
-      color: $ablack;
-      vertical-align: bottom;
-    }
-  }
   a {
     color: $ablack;
     &:hover {
