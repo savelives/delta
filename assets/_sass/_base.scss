@@ -159,12 +159,22 @@ label.error {
   }
 }
 
-@include media($iphone-4) {
-  .main-header-iphone4 {
+@include media($iphone-5) {
+  .main-header-iphone {
     position: relative;
     top: 0;
   }
-  .home-part-iphone4 {
+  .home-part-iphone {
+    margin-top: 0 !important;
+  }
+}
+
+@include media($iphone-4) {
+  .main-header-iphone {
+    position: relative;
+    top: 0;
+  }
+  .home-part-iphone {
     margin-top: 0 !important;
   }
 }

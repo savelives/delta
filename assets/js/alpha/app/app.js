@@ -68,16 +68,17 @@ var app = (function (window, document, undefined) {
 
   app.iphoneFix = function () {
     var iphone4 = (window.screen.height == (960 / 2));
+    var iphone5 = (window.screen.height == (1136 / 2));
 
-    if (iphone4) {
+    if (iphone4 || iphone5) {
       $('input, textarea').on('focus', function () {
-        $('.main-header').addClass('main-header-iphone4');
-        $('.home-part').addClass('home-part-iphone4');
+        $('.main-header').addClass('main-header-iphone');
+        $('.home-part').addClass('home-part-iphone');
       });
 
       $('input, textarea').on('focusout', function () {
-        $('.main-header').removeClass('main-header-iphone4');
-        $('.home-part').removeClass('home-part-iphone4');
+        $('.main-header').removeClass('main-header-iphone');
+        $('.home-part').removeClass('home-part-iphone');
       });
     };
   };
