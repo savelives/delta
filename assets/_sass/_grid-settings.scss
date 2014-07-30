@@ -9,7 +9,7 @@
 
 $max-width: em(960);
 
-$large-desktop: new-breakpoint(min-width 81em 12);
+$large-desktop: new-breakpoint(min-width 81em min-height 51em 12);
 $desktop: new-breakpoint(min-width 50em 12);
 $tablet: new-breakpoint(max-width 50em 8);
 $mobile: new-breakpoint(max-width 30em 4);

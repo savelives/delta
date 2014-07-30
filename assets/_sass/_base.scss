@@ -399,9 +399,14 @@ label.error {
   padding: 40px 0;
   min-height: 100%;
   height: 750px;
+  @include media($large-desktop) {
+    .wrap {
+      margin-top: 210px;
+    }
+  }
   @include media($desktop) {
     .wrap {
-      margin-top: 180px;
+      margin-top: 170px;
     }
   }
   @include media($mobile) {
@@ -489,7 +494,7 @@ label.error {
 .other-infos {
   position: absolute;
   right: 0;
-  bottom: 20px;
+  bottom: 40px;
   left: 0;
   text-align: center;
   a {
