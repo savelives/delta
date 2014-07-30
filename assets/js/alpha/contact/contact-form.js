@@ -98,7 +98,7 @@ var contactForm = (function (window, document, undefined) {
     var successContent = $('.contact-success');
     var refreshMe = $('.contact-success p');
 
-    $(successContent).on('click', refreshMe, function () {
+    $(refreshMe).on('click', function () {
       successContent.addClass('is-hidden');
       form.removeClass('is-hidden');
       $('.invite-to-contact').removeClass('is-hidden');
