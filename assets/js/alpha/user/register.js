@@ -94,7 +94,7 @@ var userForm = (function (window, document, undefined) {
     var successContent = $('.register-success');
     var refreshMe = $('.register-success p');
 
-    $(successContent).on('click', refreshMe, function () {
+    $(refreshMe).on('click', function () {
       successContent.addClass('is-hidden');
       form.removeClass('is-hidden');
       $('.initiative-title-sub-title').removeClass('is-hidden');
