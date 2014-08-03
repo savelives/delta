@@ -114,36 +114,6 @@ label.error {
   background: $awhite;
   color: $ablack;
 }
-  /* By Zeno Rocha */
-  @-webkit-keyframes dropin {
-    from  { margin-top: -800px; }
-    90%   { margin-top: 10px; }
-    to    { margin-top: 0; }
-  }
-  @-moz-keyframes dropin {
-    from  { margin-top: -800px; }
-    90%   { margin-top: 10px; }
-    to    { margin-top: 0; }
-  }
-  @keyframes dropin {
-    from  { margin-top: -800px; }
-    90%   { margin-top: 10px; }
-    to    { margin-top: 0; }
-  }
-
-  @-webkit-keyframes slidein {
-    from  { margin-left: -800px; }
-    to    { margin-left: 0; }
-  }
-  @-moz-keyframes slidein {
-    from  { margin-left: -800px; }
-    to    { margin-left: 0; }
-  }
-  @keyframes slidein {
-    from  { margin-left: -800px; }
-    to    { margin-left: 0; }
-  }
-
 
 /*------------------------------------*\
   Main Header
