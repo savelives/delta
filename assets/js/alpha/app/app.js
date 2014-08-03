@@ -40,11 +40,6 @@ var app = (function (window, document, undefined) {
 
       $(this).on('click', function (i) {
 
-        // if ($(this).parent().attr('active') == "") {
-        //   console.log('Yo ');
-        //   $(this).parent().siblings().find('.arrow-big-title').removeClass('arrow-big-title-active');
-        // }
-
         $(this).find('.arrow-big-title').toggleClass('arrow-big-title-active')[i];
       });
 
