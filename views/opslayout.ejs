@@ -11,14 +11,14 @@
 
     * {
       padding: 0;
+      margin: 0;
     }
 
     body {
       font-family: 'Lato', sans-serif;
       text-align: center;
       font-size: 16px;
-      background: #2b2b2b;
-      color: #f3f3f3;
+      background: #fff;
     }
 
     p {
@@ -45,10 +45,43 @@
       display: inline;
     }
 
-    .main-content {
+    .wrapper {
       width: 960px;
       max-width: 100%;
-      margin: 120px auto;
+      margin: auto;
+    }
+
+    .main-content__top {
+      position: absolute;
+      color: #affab3;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 50%;
+      background: #00acc2;
+    }
+
+    .main-content__top .wrapper,
+    .main-content__bottom .wrapper {
+      margin-top: 50px;
+    }
+
+    .main-content__bottom {
+      position: absolute;
+      color: #3ecf9e;
+      top: 50%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 400;
+      margin-top: 20px;
+      width: 600px;
+      text-align: center;
+      margin: auto;
     }
 
   </style>
